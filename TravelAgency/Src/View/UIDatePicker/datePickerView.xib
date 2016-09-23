@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Nbv-hZ-wGE" customClass="datePickerView">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="422"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9T-X4-011">
+                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                    <state key="normal" title="取消"/>
+                    <connections>
+                        <action selector="cancleButon:" destination="Nbv-hZ-wGE" eventType="touchUpInside" id="ySL-H5-HBG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bB-a8-iAj">
+                    <rect key="frame" x="370" y="0.0" width="30" height="30"/>
+                    <state key="normal" title="确定"/>
+                    <connections>
+                        <action selector="sureButtonClick:" destination="Nbv-hZ-wGE" eventType="touchUpInside" id="OwE-mD-LOH"/>
+                    </connections>
+                </button>
+                <datePicker contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="dNH-Tn-tG3">
+                    <rect key="frame" x="0.0" y="30" width="400" height="392"/>
+                    <date key="date" timeIntervalSinceReferenceDate="496063159.99230701">
+                        <!--2016-09-20 11:19:19 +0000-->
+                    </date>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1bB-a8-iAj" secondAttribute="trailing" id="3IQ-Rl-DF8"/>
+                <constraint firstItem="dNH-Tn-tG3" firstAttribute="top" secondItem="1bB-a8-iAj" secondAttribute="bottom" id="9Wp-18-EzI"/>
+                <constraint firstItem="dNH-Tn-tG3" firstAttribute="leading" secondItem="Nbv-hZ-wGE" secondAttribute="leading" id="9z4-4N-4Ex"/>
+                <constraint firstAttribute="trailing" secondItem="dNH-Tn-tG3" secondAttribute="trailing" id="DSx-No-jQY"/>
+                <constraint firstItem="1bB-a8-iAj" firstAttribute="top" secondItem="Nbv-hZ-wGE" secondAttribute="top" id="Olb-WA-07C"/>
+                <constraint firstItem="Y9T-X4-011" firstAttribute="top" secondItem="Nbv-hZ-wGE" secondAttribute="top" id="RPe-je-e8N"/>
+                <constraint firstAttribute="bottom" secondItem="dNH-Tn-tG3" secondAttribute="bottom" id="ZU7-0K-q3T"/>
+                <constraint firstItem="Y9T-X4-011" firstAttribute="leading" secondItem="Nbv-hZ-wGE" secondAttribute="leading" id="n02-Az-zP3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="datePickerView" destination="dNH-Tn-tG3" id="gyF-Uc-JYV"/>
+            </connections>
+            <point key="canvasLocation" x="50" y="137"/>
+        </view>
+    </objects>
+</document>

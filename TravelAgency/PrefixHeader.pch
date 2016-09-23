@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  TravelAgency
+//
+//  Created by edianzu on 16/9/6.
+//  Copyright © 2016年 Gavin. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "AFNetworking.h"
+#import "Masonry.h"
+#import "TACommonTool.h"
+#import "AppMacro.h"
+#import "UtilsMacro.h"
+#import "UIViewController+UIPreHelper.h"
+#import "NetworkService.h"
+#import "TAAlertView.h"
+#import "TALoadingView.h"
+#import "KVNProgress.h"
+#import "UIImageView+WebCache.h"
+#import "UIImage+MultiFormat.h"
+#endif /* PrefixHeader_pch */

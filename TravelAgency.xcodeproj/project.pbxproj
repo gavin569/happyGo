@@ -7,25 +7,318 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A32225361D8794B100B6F90E /* TAOrderListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A32225351D8794B100B6F90E /* TAOrderListViewModel.m */; };
+		A33EE23F1D863B1D0001E208 /* TALoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A33EE23E1D863B1D0001E208 /* TALoadingView.m */; };
+		A33EE2431D864AEE0001E208 /* TALineListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A33EE2421D864AEE0001E208 /* TALineListModel.m */; };
+		A33EE24F1D8694200001E208 /* TASystemMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33EE24E1D8694200001E208 /* TASystemMessageViewController.m */; };
+		A33EE2531D8695900001E208 /* TAFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33EE2521D8695900001E208 /* TAFriendViewController.m */; };
+		A33EE2571D8696810001E208 /* TAAddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33EE2551D8696810001E208 /* TAAddFriendViewController.m */; };
+		A33EE2581D8696810001E208 /* TAAddFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33EE2561D8696810001E208 /* TAAddFriendViewController.xib */; };
+		A33EE25C1D869EF00001E208 /* TALineListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33EE25B1D869EF00001E208 /* TALineListViewController.m */; };
+		A33EE2601D869F570001E208 /* TAAddLineListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33EE25E1D869F570001E208 /* TAAddLineListViewController.m */; };
+		A33EE2611D869F570001E208 /* TAAddLineListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33EE25F1D869F570001E208 /* TAAddLineListViewController.xib */; };
+		A33EE2651D86AAD80001E208 /* TAMyBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33EE2641D86AAD80001E208 /* TAMyBillViewController.m */; };
+		A33EE2691D86ABCE0001E208 /* TAMyOrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33EE2681D86ABCE0001E208 /* TAMyOrderListViewController.m */; };
+		A33EE26D1D86ACDB0001E208 /* TAChangePassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33EE26C1D86ACDB0001E208 /* TAChangePassWordViewController.m */; };
+		A341773A1D8E218F00B343EA /* TASelfCenterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A34177391D8E218F00B343EA /* TASelfCenterViewModel.m */; };
+		A341773E1D8E33B300B343EA /* TASelectCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A341773D1D8E33B300B343EA /* TASelectCityViewController.m */; };
+		A341774B1D8E360600B343EA /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = A34177491D8E360600B343EA /* cities.plist */; };
+		A34177531D8E36FA00B343EA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A34177521D8E36FA00B343EA /* CoreLocation.framework */; };
+		A34177591D8E374B00B343EA /* LNSearchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A34177561D8E374B00B343EA /* LNSearchManager.m */; };
+		A341775A1D8E374B00B343EA /* LNLocationGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = A34177581D8E374B00B343EA /* LNLocationGeocoder.m */; };
+		A341775D1D8E375A00B343EA /* LNLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A341775C1D8E375A00B343EA /* LNLocationManager.m */; };
+		A34177631D8E408D00B343EA /* TAAddressPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A34177621D8E408D00B343EA /* TAAddressPickerViewController.m */; };
+		A375C5D61D7EAB2100A80309 /* page.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C5D31D7EAB2100A80309 /* page.png */; };
+		A375C5D71D7EAB2100A80309 /* page@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C5D41D7EAB2100A80309 /* page@2x.png */; };
+		A375C5D81D7EAB2100A80309 /* page@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C5D51D7EAB2100A80309 /* page@3x.png */; };
+		A375C5DC1D7EAB5400A80309 /* Lunch.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C5D91D7EAB5400A80309 /* Lunch.png */; };
+		A375C5DD1D7EAB5400A80309 /* Lunch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C5DA1D7EAB5400A80309 /* Lunch@2x.png */; };
+		A375C5DE1D7EAB5400A80309 /* Lunch@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C5DB1D7EAB5400A80309 /* Lunch@3x.png */; };
+		A375C5E21D7EAB9400A80309 /* MM.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C5DF1D7EAB9400A80309 /* MM.png */; };
+		A375C5E31D7EAB9400A80309 /* MM@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C5E01D7EAB9400A80309 /* MM@2x.png */; };
+		A375C5E41D7EAB9400A80309 /* MM@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C5E11D7EAB9400A80309 /* MM@3x.png */; };
+		A375C5E81D7EABA200A80309 /* smallLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C5E51D7EABA200A80309 /* smallLogin.png */; };
+		A375C5E91D7EABA200A80309 /* smallLogin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C5E61D7EABA200A80309 /* smallLogin@2x.png */; };
+		A375C5EA1D7EABA200A80309 /* smallLogin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C5E71D7EABA200A80309 /* smallLogin@3x.png */; };
+		A375C6021D7EC3A500A80309 /* navigation_back_w.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C5FF1D7EC3A500A80309 /* navigation_back_w.png */; };
+		A375C6031D7EC3A500A80309 /* navigation_back_w@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C6001D7EC3A500A80309 /* navigation_back_w@2x.png */; };
+		A375C6041D7EC3A500A80309 /* navigation_back_w@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C6011D7EC3A500A80309 /* navigation_back_w@3x.png */; };
+		A375C6071D7EC9FA00A80309 /* TABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A375C6061D7EC9FA00A80309 /* TABaseViewController.m */; };
+		A375C61B1D7EDD4000A80309 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C6181D7EDD4000A80309 /* banner.png */; };
+		A375C61C1D7EDD4000A80309 /* banner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C6191D7EDD4000A80309 /* banner@2x.png */; };
+		A375C61D1D7EDD4000A80309 /* banner@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C61A1D7EDD4000A80309 /* banner@3x.png */; };
+		A375C6211D7EE21800A80309 /* TASelfCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A375C6201D7EE21800A80309 /* TASelfCenterViewController.m */; };
+		A375C62B1D7EE5FF00A80309 /* S_6.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C6281D7EE5FF00A80309 /* S_6.png */; };
+		A375C62C1D7EE5FF00A80309 /* S_6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C6291D7EE5FF00A80309 /* S_6@2x.png */; };
+		A375C62D1D7EE5FF00A80309 /* S_6@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C62A1D7EE5FF00A80309 /* S_6@3x.png */; };
 		A3986A191D7E68530032E931 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3986A181D7E68530032E931 /* main.m */; };
-		A3986A1C1D7E68530032E931 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3986A1B1D7E68530032E931 /* AppDelegate.m */; };
-		A3986A1F1D7E68530032E931 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3986A1E1D7E68530032E931 /* ViewController.m */; };
-		A3986A221D7E68530032E931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3986A201D7E68530032E931 /* Main.storyboard */; };
 		A3986A241D7E68530032E931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3986A231D7E68530032E931 /* Assets.xcassets */; };
 		A3986A271D7E68530032E931 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3986A251D7E68530032E931 /* LaunchScreen.storyboard */; };
+		A3986A4B1D7E691E0032E931 /* UIViewController+UIPreHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A3986A391D7E691E0032E931 /* UIViewController+UIPreHelper.m */; };
+		A3986A4C1D7E691E0032E931 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = A3986A3D1D7E691E0032E931 /* NetworkService.m */; };
+		A3986A521D7E69370032E931 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3986A511D7E69370032E931 /* AppDelegate.m */; };
+		A3986A561D7E69AD0032E931 /* TAMidbodyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3986A551D7E69AD0032E931 /* TAMidbodyViewController.m */; };
+		A3986A5B1D7E71EC0032E931 /* TALoginAndRegisterStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3986A5A1D7E71EC0032E931 /* TALoginAndRegisterStoryboard.storyboard */; };
+		A3986A601D7E72820032E931 /* TALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3986A5F1D7E72820032E931 /* TALoginViewController.m */; };
+		A3986A651D7E74C60032E931 /* TACommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A3986A641D7E74C60032E931 /* TACommonTool.m */; };
+		A3986A691D7E778D0032E931 /* AppMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = A3986A681D7E778D0032E931 /* AppMacro.m */; };
+		A3A3F3131D81799E0039CC31 /* TARegisterOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A3F30F1D81799E0039CC31 /* TARegisterOneViewController.m */; };
+		A3A3F3141D81799E0039CC31 /* TARegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A3F3111D81799E0039CC31 /* TARegisterViewController.m */; };
+		A3A3F3151D81799E0039CC31 /* TARegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3A3F3121D81799E0039CC31 /* TARegisterViewController.xib */; };
+		A3A3F3191D8182800039CC31 /* man_yes.png in Resources */ = {isa = PBXBuildFile; fileRef = A3A3F3161D8182800039CC31 /* man_yes.png */; };
+		A3A3F31A1D8182800039CC31 /* man_yes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3A3F3171D8182800039CC31 /* man_yes@2x.png */; };
+		A3A3F31B1D8182800039CC31 /* man_yes@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3A3F3181D8182800039CC31 /* man_yes@3x.png */; };
+		A3BB10A51D824DCA0044EA8D /* TATravelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BB10A41D824DCA0044EA8D /* TATravelViewController.m */; };
+		A3BB10A91D824ED00044EA8D /* TAJiaoDanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BB10A81D824ED00044EA8D /* TAJiaoDanViewController.m */; };
+		A3BB10AF1D8257CE0044EA8D /* TADriverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BB10AE1D8257CE0044EA8D /* TADriverViewController.m */; };
+		A3BB10B31D8258060044EA8D /* TATouristViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BB10B21D8258060044EA8D /* TATouristViewController.m */; };
+		A3BB10B71D8258530044EA8D /* TAOwnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BB10B61D8258530044EA8D /* TAOwnerViewController.m */; };
+		A3BB10C71D8287AD0044EA8D /* TALoginAndRegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BB10C61D8287AD0044EA8D /* TALoginAndRegisterViewModel.m */; };
+		A3BB10CE1D82A05D0044EA8D /* TAAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BB10CD1D82A05D0044EA8D /* TAAlertView.m */; };
+		A3CB2FBF1D922539000D58CC /* TAPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CB2FBB1D922539000D58CC /* TAPickerView.m */; };
+		A3CB2FC01D922539000D58CC /* TAPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3CB2FBC1D922539000D58CC /* TAPickerView.xib */; };
+		A3CB2FC11D922539000D58CC /* TABasePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CB2FBE1D922539000D58CC /* TABasePickerView.m */; };
+		A3CB2FC71D922615000D58CC /* WJDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CB2FC31D922615000D58CC /* WJDatePickerView.m */; };
+		A3CB2FC81D922615000D58CC /* datePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CB2FC51D922615000D58CC /* datePickerView.m */; };
+		A3CB2FC91D922615000D58CC /* datePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3CB2FC61D922615000D58CC /* datePickerView.xib */; };
+		A3D758A61D88E369006AF3D6 /* TACarPriceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D758A51D88E369006AF3D6 /* TACarPriceViewController.m */; };
+		A3D758AA1D88E500006AF3D6 /* TAAddCarPriceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D758A81D88E500006AF3D6 /* TAAddCarPriceViewController.m */; };
+		A3D758AB1D88E500006AF3D6 /* TAAddCarPriceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D758A91D88E500006AF3D6 /* TAAddCarPriceViewController.xib */; };
+		A3D758B61D88F90F006AF3D6 /* A.png in Resources */ = {isa = PBXBuildFile; fileRef = A3D758B31D88F90E006AF3D6 /* A.png */; };
+		A3D758B71D88F90F006AF3D6 /* A@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3D758B41D88F90E006AF3D6 /* A@2x.png */; };
+		A3D758B81D88F90F006AF3D6 /* A@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3D758B51D88F90F006AF3D6 /* A@3x.png */; };
+		A3D758C11D890144006AF3D6 /* TALineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D758C01D890144006AF3D6 /* TALineViewModel.m */; };
+		A3D758C41D89046F006AF3D6 /* TAALLRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D758C31D89046F006AF3D6 /* TAALLRouteViewController.m */; };
+		A3D758C71D891FFF006AF3D6 /* TALineInOwnerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D758C61D891FFF006AF3D6 /* TALineInOwnerModel.m */; };
+		A3D758D11D8938AD006AF3D6 /* TAOwnerHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D758D01D8938AD006AF3D6 /* TAOwnerHeaderView.m */; };
+		A3D758D71D8946C2006AF3D6 /* TAOwnerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D758D61D8946C2006AF3D6 /* TAOwnerViewModel.m */; };
+		A3D758DC1D89489C006AF3D6 /* TAOwnerCarTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D758DB1D89489C006AF3D6 /* TAOwnerCarTypeModel.m */; };
+		A3D758E01D895042006AF3D6 /* TAMyCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D758DF1D895042006AF3D6 /* TAMyCarViewController.m */; };
+		A3D758E41D895100006AF3D6 /* TAAddMyCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D758E21D895100006AF3D6 /* TAAddMyCarViewController.m */; };
+		A3D758E51D895100006AF3D6 /* TAAddMyCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D758E31D895100006AF3D6 /* TAAddMyCarViewController.xib */; };
+		A3DAAFB71D90D76A00272F66 /* TAFirstSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DAAFB51D90D76A00272F66 /* TAFirstSectionCell.m */; };
+		A3DAAFB81D90D76A00272F66 /* TAFirstSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DAAFB61D90D76A00272F66 /* TAFirstSectionCell.xib */; };
+		A3DAAFBC1D90D78500272F66 /* TASecondSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DAAFBA1D90D78500272F66 /* TASecondSectionCell.m */; };
+		A3DAAFBD1D90D78500272F66 /* TASecondSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DAAFBB1D90D78500272F66 /* TASecondSectionCell.xib */; };
+		A3DAAFC21D90E09900272F66 /* TATravelSendGroupFirstSectopnModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DAAFC11D90E09900272F66 /* TATravelSendGroupFirstSectopnModel.m */; };
+		A3DAAFC61D90E65D00272F66 /* TATravelSendGroupSecondSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DAAFC51D90E65D00272F66 /* TATravelSendGroupSecondSectionModel.m */; };
+		A3DAAFCD1D91252800272F66 /* TACheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DAAFCB1D91252800272F66 /* TACheckViewController.m */; };
+		A3DAAFCE1D91252800272F66 /* TACheckViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DAAFCC1D91252800272F66 /* TACheckViewController.xib */; };
+		A3E12AF41D8F81520022BFDB /* TAFillSelfMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E12AF31D8F81520022BFDB /* TAFillSelfMessageViewController.m */; };
+		A3E12B011D8F8B4D0022BFDB /* TACarSelectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E12AFB1D8F8B4D0022BFDB /* TACarSelectButton.m */; };
+		A3E12B021D8F8B4D0022BFDB /* TARoleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E12AFE1D8F8B4D0022BFDB /* TARoleButton.m */; };
+		A3E12B031D8F8B4D0022BFDB /* TASelectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E12B001D8F8B4D0022BFDB /* TASelectButton.m */; };
+		A3E12B161D8F8B560022BFDB /* TAFirstPageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E12B061D8F8B560022BFDB /* TAFirstPageTableViewCell.m */; };
+		A3E12B171D8F8B560022BFDB /* TAFirstPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3E12B071D8F8B560022BFDB /* TAFirstPageTableViewCell.xib */; };
+		A3E12B181D8F8B560022BFDB /* TALineAndRegisterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E12B091D8F8B560022BFDB /* TALineAndRegisterTableViewCell.m */; };
+		A3E12B191D8F8B560022BFDB /* TAOwnerLineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E12B0D1D8F8B560022BFDB /* TAOwnerLineTableViewCell.m */; };
+		A3E12B1A1D8F8B560022BFDB /* TAOwnerLineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3E12B0E1D8F8B560022BFDB /* TAOwnerLineTableViewCell.xib */; };
+		A3E12B1B1D8F8B560022BFDB /* BCurrentCityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E12B111D8F8B560022BFDB /* BCurrentCityCell.m */; };
+		A3E12B1C1D8F8B560022BFDB /* BHotCityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E12B131D8F8B560022BFDB /* BHotCityCell.m */; };
+		A3E12B1D1D8F8B560022BFDB /* BRecentCityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E12B151D8F8B560022BFDB /* BRecentCityCell.m */; };
+		A3E12B211D8F8BBF0022BFDB /* TAFriendMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E12B1F1D8F8BBF0022BFDB /* TAFriendMessageCell.m */; };
+		A3E12B221D8F8BBF0022BFDB /* TAFriendMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3E12B201D8F8BBF0022BFDB /* TAFriendMessageCell.xib */; };
+		A3E12B2B1D8F94420022BFDB /* TAQueryLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E12B291D8F94420022BFDB /* TAQueryLineViewController.m */; };
+		A3E12B2C1D8F94420022BFDB /* TAQueryLineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3E12B2A1D8F94420022BFDB /* TAQueryLineViewController.xib */; };
+		A3E12B381D8FC3AB0022BFDB /* TASystemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E12B371D8FC3AB0022BFDB /* TASystemViewController.m */; };
+		A3E12B3B1D8FC4540022BFDB /* TAThrowPeopleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E12B3A1D8FC4540022BFDB /* TAThrowPeopleViewController.m */; };
+		A3E12B521D9003090022BFDB /* TASendGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E12B511D9003090022BFDB /* TASendGroupViewController.m */; };
+		E2DCE25E4632B73CE0B9059F /* libPods-TravelAgency.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4232C126A6768E3022D77C58 /* libPods-TravelAgency.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4232C126A6768E3022D77C58 /* libPods-TravelAgency.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelAgency.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44742852462C2239F6E4FE47 /* Pods-TravelAgency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelAgency.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelAgency/Pods-TravelAgency.release.xcconfig"; sourceTree = "<group>"; };
+		A32225341D8794B100B6F90E /* TAOrderListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAOrderListViewModel.h; sourceTree = "<group>"; };
+		A32225351D8794B100B6F90E /* TAOrderListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAOrderListViewModel.m; sourceTree = "<group>"; };
+		A33EE23D1D863B1D0001E208 /* TALoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TALoadingView.h; sourceTree = "<group>"; };
+		A33EE23E1D863B1D0001E208 /* TALoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TALoadingView.m; sourceTree = "<group>"; };
+		A33EE2411D864AEE0001E208 /* TALineListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TALineListModel.h; sourceTree = "<group>"; };
+		A33EE2421D864AEE0001E208 /* TALineListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TALineListModel.m; sourceTree = "<group>"; };
+		A33EE24D1D8694200001E208 /* TASystemMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASystemMessageViewController.h; sourceTree = "<group>"; };
+		A33EE24E1D8694200001E208 /* TASystemMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASystemMessageViewController.m; sourceTree = "<group>"; };
+		A33EE2511D8695900001E208 /* TAFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAFriendViewController.h; sourceTree = "<group>"; };
+		A33EE2521D8695900001E208 /* TAFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAFriendViewController.m; sourceTree = "<group>"; };
+		A33EE2541D8696810001E208 /* TAAddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAddFriendViewController.h; sourceTree = "<group>"; };
+		A33EE2551D8696810001E208 /* TAAddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAddFriendViewController.m; sourceTree = "<group>"; };
+		A33EE2561D8696810001E208 /* TAAddFriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAAddFriendViewController.xib; sourceTree = "<group>"; };
+		A33EE25A1D869EEF0001E208 /* TALineListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TALineListViewController.h; sourceTree = "<group>"; };
+		A33EE25B1D869EF00001E208 /* TALineListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TALineListViewController.m; sourceTree = "<group>"; };
+		A33EE25D1D869F570001E208 /* TAAddLineListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAddLineListViewController.h; sourceTree = "<group>"; };
+		A33EE25E1D869F570001E208 /* TAAddLineListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAddLineListViewController.m; sourceTree = "<group>"; };
+		A33EE25F1D869F570001E208 /* TAAddLineListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAAddLineListViewController.xib; sourceTree = "<group>"; };
+		A33EE2631D86AAD80001E208 /* TAMyBillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAMyBillViewController.h; sourceTree = "<group>"; };
+		A33EE2641D86AAD80001E208 /* TAMyBillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAMyBillViewController.m; sourceTree = "<group>"; };
+		A33EE2671D86ABCE0001E208 /* TAMyOrderListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAMyOrderListViewController.h; sourceTree = "<group>"; };
+		A33EE2681D86ABCE0001E208 /* TAMyOrderListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAMyOrderListViewController.m; sourceTree = "<group>"; };
+		A33EE26B1D86ACDB0001E208 /* TAChangePassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAChangePassWordViewController.h; sourceTree = "<group>"; };
+		A33EE26C1D86ACDB0001E208 /* TAChangePassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAChangePassWordViewController.m; sourceTree = "<group>"; };
+		A34177381D8E218F00B343EA /* TASelfCenterViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASelfCenterViewModel.h; sourceTree = "<group>"; };
+		A34177391D8E218F00B343EA /* TASelfCenterViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASelfCenterViewModel.m; sourceTree = "<group>"; };
+		A341773C1D8E33B300B343EA /* TASelectCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASelectCityViewController.h; sourceTree = "<group>"; };
+		A341773D1D8E33B300B343EA /* TASelectCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASelectCityViewController.m; sourceTree = "<group>"; };
+		A34177491D8E360600B343EA /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		A34177521D8E36FA00B343EA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A34177551D8E374B00B343EA /* LNSearchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNSearchManager.h; sourceTree = "<group>"; };
+		A34177561D8E374B00B343EA /* LNSearchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNSearchManager.m; sourceTree = "<group>"; };
+		A34177571D8E374B00B343EA /* LNLocationGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNLocationGeocoder.h; sourceTree = "<group>"; };
+		A34177581D8E374B00B343EA /* LNLocationGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNLocationGeocoder.m; sourceTree = "<group>"; };
+		A341775B1D8E375A00B343EA /* LNLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNLocationManager.h; sourceTree = "<group>"; };
+		A341775C1D8E375A00B343EA /* LNLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNLocationManager.m; sourceTree = "<group>"; };
+		A34177611D8E408D00B343EA /* TAAddressPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAddressPickerViewController.h; sourceTree = "<group>"; };
+		A34177621D8E408D00B343EA /* TAAddressPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAddressPickerViewController.m; sourceTree = "<group>"; };
+		A375C5D31D7EAB2100A80309 /* page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page.png; sourceTree = "<group>"; };
+		A375C5D41D7EAB2100A80309 /* page@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page@2x.png"; sourceTree = "<group>"; };
+		A375C5D51D7EAB2100A80309 /* page@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page@3x.png"; sourceTree = "<group>"; };
+		A375C5D91D7EAB5400A80309 /* Lunch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lunch.png; sourceTree = "<group>"; };
+		A375C5DA1D7EAB5400A80309 /* Lunch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lunch@2x.png"; sourceTree = "<group>"; };
+		A375C5DB1D7EAB5400A80309 /* Lunch@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lunch@3x.png"; sourceTree = "<group>"; };
+		A375C5DF1D7EAB9400A80309 /* MM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MM.png; sourceTree = "<group>"; };
+		A375C5E01D7EAB9400A80309 /* MM@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MM@2x.png"; sourceTree = "<group>"; };
+		A375C5E11D7EAB9400A80309 /* MM@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MM@3x.png"; sourceTree = "<group>"; };
+		A375C5E51D7EABA200A80309 /* smallLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallLogin.png; sourceTree = "<group>"; };
+		A375C5E61D7EABA200A80309 /* smallLogin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smallLogin@2x.png"; sourceTree = "<group>"; };
+		A375C5E71D7EABA200A80309 /* smallLogin@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smallLogin@3x.png"; sourceTree = "<group>"; };
+		A375C5FF1D7EC3A500A80309 /* navigation_back_w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigation_back_w.png; sourceTree = "<group>"; };
+		A375C6001D7EC3A500A80309 /* navigation_back_w@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_back_w@2x.png"; sourceTree = "<group>"; };
+		A375C6011D7EC3A500A80309 /* navigation_back_w@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation_back_w@3x.png"; sourceTree = "<group>"; };
+		A375C6051D7EC9FA00A80309 /* TABaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABaseViewController.h; sourceTree = "<group>"; };
+		A375C6061D7EC9FA00A80309 /* TABaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TABaseViewController.m; sourceTree = "<group>"; };
+		A375C6181D7EDD4000A80309 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
+		A375C6191D7EDD4000A80309 /* banner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner@2x.png"; sourceTree = "<group>"; };
+		A375C61A1D7EDD4000A80309 /* banner@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner@3x.png"; sourceTree = "<group>"; };
+		A375C61F1D7EE21800A80309 /* TASelfCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASelfCenterViewController.h; sourceTree = "<group>"; };
+		A375C6201D7EE21800A80309 /* TASelfCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASelfCenterViewController.m; sourceTree = "<group>"; };
+		A375C6281D7EE5FF00A80309 /* S_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = S_6.png; sourceTree = "<group>"; };
+		A375C6291D7EE5FF00A80309 /* S_6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "S_6@2x.png"; sourceTree = "<group>"; };
+		A375C62A1D7EE5FF00A80309 /* S_6@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "S_6@3x.png"; sourceTree = "<group>"; };
 		A3986A141D7E68530032E931 /* TravelAgency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelAgency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3986A181D7E68530032E931 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A3986A1A1D7E68530032E931 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A3986A1B1D7E68530032E931 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A3986A1D1D7E68530032E931 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A3986A1E1D7E68530032E931 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A3986A211D7E68530032E931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A3986A231D7E68530032E931 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3986A231D7E68530032E931 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		A3986A261D7E68530032E931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3986A281D7E68530032E931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3986A381D7E691E0032E931 /* UIViewController+UIPreHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UIPreHelper.h"; sourceTree = "<group>"; };
+		A3986A391D7E691E0032E931 /* UIViewController+UIPreHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UIPreHelper.m"; sourceTree = "<group>"; };
+		A3986A3C1D7E691E0032E931 /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
+		A3986A3D1D7E691E0032E931 /* NetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
+		A3986A501D7E69370032E931 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A3986A511D7E69370032E931 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A3986A541D7E69AD0032E931 /* TAMidbodyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAMidbodyViewController.h; sourceTree = "<group>"; };
+		A3986A551D7E69AD0032E931 /* TAMidbodyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAMidbodyViewController.m; sourceTree = "<group>"; };
+		A3986A5A1D7E71EC0032E931 /* TALoginAndRegisterStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TALoginAndRegisterStoryboard.storyboard; sourceTree = "<group>"; };
+		A3986A5E1D7E72820032E931 /* TALoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TALoginViewController.h; sourceTree = "<group>"; };
+		A3986A5F1D7E72820032E931 /* TALoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TALoginViewController.m; sourceTree = "<group>"; };
+		A3986A611D7E730C0032E931 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A3986A631D7E74C60032E931 /* TACommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACommonTool.h; sourceTree = "<group>"; };
+		A3986A641D7E74C60032E931 /* TACommonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACommonTool.m; sourceTree = "<group>"; };
+		A3986A671D7E778D0032E931 /* AppMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMacro.h; sourceTree = "<group>"; };
+		A3986A681D7E778D0032E931 /* AppMacro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppMacro.m; sourceTree = "<group>"; };
+		A3986A6A1D7E77950032E931 /* UtilsMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
+		A3A3F30E1D81799E0039CC31 /* TARegisterOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TARegisterOneViewController.h; sourceTree = "<group>"; };
+		A3A3F30F1D81799E0039CC31 /* TARegisterOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TARegisterOneViewController.m; sourceTree = "<group>"; };
+		A3A3F3101D81799E0039CC31 /* TARegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TARegisterViewController.h; sourceTree = "<group>"; };
+		A3A3F3111D81799E0039CC31 /* TARegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TARegisterViewController.m; sourceTree = "<group>"; };
+		A3A3F3121D81799E0039CC31 /* TARegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TARegisterViewController.xib; sourceTree = "<group>"; };
+		A3A3F3161D8182800039CC31 /* man_yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man_yes.png; sourceTree = "<group>"; };
+		A3A3F3171D8182800039CC31 /* man_yes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man_yes@2x.png"; sourceTree = "<group>"; };
+		A3A3F3181D8182800039CC31 /* man_yes@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man_yes@3x.png"; sourceTree = "<group>"; };
+		A3BB10A31D824DCA0044EA8D /* TATravelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TATravelViewController.h; sourceTree = "<group>"; };
+		A3BB10A41D824DCA0044EA8D /* TATravelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TATravelViewController.m; sourceTree = "<group>"; };
+		A3BB10A71D824ED00044EA8D /* TAJiaoDanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAJiaoDanViewController.h; sourceTree = "<group>"; };
+		A3BB10A81D824ED00044EA8D /* TAJiaoDanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAJiaoDanViewController.m; sourceTree = "<group>"; };
+		A3BB10AD1D8257CE0044EA8D /* TADriverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADriverViewController.h; sourceTree = "<group>"; };
+		A3BB10AE1D8257CE0044EA8D /* TADriverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADriverViewController.m; sourceTree = "<group>"; };
+		A3BB10B11D8258060044EA8D /* TATouristViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TATouristViewController.h; sourceTree = "<group>"; };
+		A3BB10B21D8258060044EA8D /* TATouristViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TATouristViewController.m; sourceTree = "<group>"; };
+		A3BB10B51D8258530044EA8D /* TAOwnerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAOwnerViewController.h; sourceTree = "<group>"; };
+		A3BB10B61D8258530044EA8D /* TAOwnerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAOwnerViewController.m; sourceTree = "<group>"; };
+		A3BB10C51D8287AD0044EA8D /* TALoginAndRegisterViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TALoginAndRegisterViewModel.h; sourceTree = "<group>"; };
+		A3BB10C61D8287AD0044EA8D /* TALoginAndRegisterViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TALoginAndRegisterViewModel.m; sourceTree = "<group>"; };
+		A3BB10CC1D82A05D0044EA8D /* TAAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAlertView.h; sourceTree = "<group>"; };
+		A3BB10CD1D82A05D0044EA8D /* TAAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAlertView.m; sourceTree = "<group>"; };
+		A3CB2FBA1D922539000D58CC /* TAPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPickerView.h; sourceTree = "<group>"; };
+		A3CB2FBB1D922539000D58CC /* TAPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPickerView.m; sourceTree = "<group>"; };
+		A3CB2FBC1D922539000D58CC /* TAPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAPickerView.xib; sourceTree = "<group>"; };
+		A3CB2FBD1D922539000D58CC /* TABasePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABasePickerView.h; sourceTree = "<group>"; };
+		A3CB2FBE1D922539000D58CC /* TABasePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TABasePickerView.m; sourceTree = "<group>"; };
+		A3CB2FC21D922615000D58CC /* WJDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJDatePickerView.h; sourceTree = "<group>"; };
+		A3CB2FC31D922615000D58CC /* WJDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJDatePickerView.m; sourceTree = "<group>"; };
+		A3CB2FC41D922615000D58CC /* datePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = datePickerView.h; sourceTree = "<group>"; };
+		A3CB2FC51D922615000D58CC /* datePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = datePickerView.m; sourceTree = "<group>"; };
+		A3CB2FC61D922615000D58CC /* datePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = datePickerView.xib; sourceTree = "<group>"; };
+		A3D758A41D88E369006AF3D6 /* TACarPriceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACarPriceViewController.h; sourceTree = "<group>"; };
+		A3D758A51D88E369006AF3D6 /* TACarPriceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACarPriceViewController.m; sourceTree = "<group>"; };
+		A3D758A71D88E500006AF3D6 /* TAAddCarPriceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAddCarPriceViewController.h; sourceTree = "<group>"; };
+		A3D758A81D88E500006AF3D6 /* TAAddCarPriceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAddCarPriceViewController.m; sourceTree = "<group>"; };
+		A3D758A91D88E500006AF3D6 /* TAAddCarPriceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAAddCarPriceViewController.xib; sourceTree = "<group>"; };
+		A3D758B31D88F90E006AF3D6 /* A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A.png; sourceTree = "<group>"; };
+		A3D758B41D88F90E006AF3D6 /* A@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "A@2x.png"; sourceTree = "<group>"; };
+		A3D758B51D88F90F006AF3D6 /* A@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "A@3x.png"; sourceTree = "<group>"; };
+		A3D758BF1D890144006AF3D6 /* TALineViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TALineViewModel.h; sourceTree = "<group>"; };
+		A3D758C01D890144006AF3D6 /* TALineViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TALineViewModel.m; sourceTree = "<group>"; };
+		A3D758C21D89046F006AF3D6 /* TAALLRouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAALLRouteViewController.h; sourceTree = "<group>"; };
+		A3D758C31D89046F006AF3D6 /* TAALLRouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAALLRouteViewController.m; sourceTree = "<group>"; };
+		A3D758C51D891FFF006AF3D6 /* TALineInOwnerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TALineInOwnerModel.h; sourceTree = "<group>"; };
+		A3D758C61D891FFF006AF3D6 /* TALineInOwnerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TALineInOwnerModel.m; sourceTree = "<group>"; };
+		A3D758CF1D8938AD006AF3D6 /* TAOwnerHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAOwnerHeaderView.h; sourceTree = "<group>"; };
+		A3D758D01D8938AD006AF3D6 /* TAOwnerHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAOwnerHeaderView.m; sourceTree = "<group>"; };
+		A3D758D51D8946C2006AF3D6 /* TAOwnerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAOwnerViewModel.h; sourceTree = "<group>"; };
+		A3D758D61D8946C2006AF3D6 /* TAOwnerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAOwnerViewModel.m; sourceTree = "<group>"; };
+		A3D758DA1D89489C006AF3D6 /* TAOwnerCarTypeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAOwnerCarTypeModel.h; sourceTree = "<group>"; };
+		A3D758DB1D89489C006AF3D6 /* TAOwnerCarTypeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAOwnerCarTypeModel.m; sourceTree = "<group>"; };
+		A3D758DE1D895042006AF3D6 /* TAMyCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAMyCarViewController.h; sourceTree = "<group>"; };
+		A3D758DF1D895042006AF3D6 /* TAMyCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAMyCarViewController.m; sourceTree = "<group>"; };
+		A3D758E11D895100006AF3D6 /* TAAddMyCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAddMyCarViewController.h; sourceTree = "<group>"; };
+		A3D758E21D895100006AF3D6 /* TAAddMyCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAddMyCarViewController.m; sourceTree = "<group>"; };
+		A3D758E31D895100006AF3D6 /* TAAddMyCarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAAddMyCarViewController.xib; sourceTree = "<group>"; };
+		A3DAAFB41D90D76A00272F66 /* TAFirstSectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAFirstSectionCell.h; sourceTree = "<group>"; };
+		A3DAAFB51D90D76A00272F66 /* TAFirstSectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAFirstSectionCell.m; sourceTree = "<group>"; };
+		A3DAAFB61D90D76A00272F66 /* TAFirstSectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAFirstSectionCell.xib; sourceTree = "<group>"; };
+		A3DAAFB91D90D78500272F66 /* TASecondSectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASecondSectionCell.h; sourceTree = "<group>"; };
+		A3DAAFBA1D90D78500272F66 /* TASecondSectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASecondSectionCell.m; sourceTree = "<group>"; };
+		A3DAAFBB1D90D78500272F66 /* TASecondSectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TASecondSectionCell.xib; sourceTree = "<group>"; };
+		A3DAAFC01D90E09900272F66 /* TATravelSendGroupFirstSectopnModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TATravelSendGroupFirstSectopnModel.h; sourceTree = "<group>"; };
+		A3DAAFC11D90E09900272F66 /* TATravelSendGroupFirstSectopnModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TATravelSendGroupFirstSectopnModel.m; sourceTree = "<group>"; };
+		A3DAAFC41D90E65D00272F66 /* TATravelSendGroupSecondSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TATravelSendGroupSecondSectionModel.h; sourceTree = "<group>"; };
+		A3DAAFC51D90E65D00272F66 /* TATravelSendGroupSecondSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TATravelSendGroupSecondSectionModel.m; sourceTree = "<group>"; };
+		A3DAAFCA1D91252800272F66 /* TACheckViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACheckViewController.h; sourceTree = "<group>"; };
+		A3DAAFCB1D91252800272F66 /* TACheckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACheckViewController.m; sourceTree = "<group>"; };
+		A3DAAFCC1D91252800272F66 /* TACheckViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TACheckViewController.xib; sourceTree = "<group>"; };
+		A3E12AF21D8F81520022BFDB /* TAFillSelfMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAFillSelfMessageViewController.h; sourceTree = "<group>"; };
+		A3E12AF31D8F81520022BFDB /* TAFillSelfMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAFillSelfMessageViewController.m; sourceTree = "<group>"; };
+		A3E12AFA1D8F8B4D0022BFDB /* TACarSelectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACarSelectButton.h; sourceTree = "<group>"; };
+		A3E12AFB1D8F8B4D0022BFDB /* TACarSelectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACarSelectButton.m; sourceTree = "<group>"; };
+		A3E12AFD1D8F8B4D0022BFDB /* TARoleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TARoleButton.h; sourceTree = "<group>"; };
+		A3E12AFE1D8F8B4D0022BFDB /* TARoleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TARoleButton.m; sourceTree = "<group>"; };
+		A3E12AFF1D8F8B4D0022BFDB /* TASelectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASelectButton.h; sourceTree = "<group>"; };
+		A3E12B001D8F8B4D0022BFDB /* TASelectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASelectButton.m; sourceTree = "<group>"; };
+		A3E12B051D8F8B560022BFDB /* TAFirstPageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAFirstPageTableViewCell.h; sourceTree = "<group>"; };
+		A3E12B061D8F8B560022BFDB /* TAFirstPageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAFirstPageTableViewCell.m; sourceTree = "<group>"; };
+		A3E12B071D8F8B560022BFDB /* TAFirstPageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAFirstPageTableViewCell.xib; sourceTree = "<group>"; };
+		A3E12B081D8F8B560022BFDB /* TALineAndRegisterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TALineAndRegisterTableViewCell.h; sourceTree = "<group>"; };
+		A3E12B091D8F8B560022BFDB /* TALineAndRegisterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TALineAndRegisterTableViewCell.m; sourceTree = "<group>"; };
+		A3E12B0C1D8F8B560022BFDB /* TAOwnerLineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAOwnerLineTableViewCell.h; sourceTree = "<group>"; };
+		A3E12B0D1D8F8B560022BFDB /* TAOwnerLineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAOwnerLineTableViewCell.m; sourceTree = "<group>"; };
+		A3E12B0E1D8F8B560022BFDB /* TAOwnerLineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAOwnerLineTableViewCell.xib; sourceTree = "<group>"; };
+		A3E12B101D8F8B560022BFDB /* BCurrentCityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCurrentCityCell.h; sourceTree = "<group>"; };
+		A3E12B111D8F8B560022BFDB /* BCurrentCityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCurrentCityCell.m; sourceTree = "<group>"; };
+		A3E12B121D8F8B560022BFDB /* BHotCityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHotCityCell.h; sourceTree = "<group>"; };
+		A3E12B131D8F8B560022BFDB /* BHotCityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHotCityCell.m; sourceTree = "<group>"; };
+		A3E12B141D8F8B560022BFDB /* BRecentCityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRecentCityCell.h; sourceTree = "<group>"; };
+		A3E12B151D8F8B560022BFDB /* BRecentCityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRecentCityCell.m; sourceTree = "<group>"; };
+		A3E12B1E1D8F8BBF0022BFDB /* TAFriendMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAFriendMessageCell.h; sourceTree = "<group>"; };
+		A3E12B1F1D8F8BBF0022BFDB /* TAFriendMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAFriendMessageCell.m; sourceTree = "<group>"; };
+		A3E12B201D8F8BBF0022BFDB /* TAFriendMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAFriendMessageCell.xib; sourceTree = "<group>"; };
+		A3E12B281D8F94420022BFDB /* TAQueryLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAQueryLineViewController.h; sourceTree = "<group>"; };
+		A3E12B291D8F94420022BFDB /* TAQueryLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAQueryLineViewController.m; sourceTree = "<group>"; };
+		A3E12B2A1D8F94420022BFDB /* TAQueryLineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAQueryLineViewController.xib; sourceTree = "<group>"; };
+		A3E12B361D8FC3AB0022BFDB /* TASystemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASystemViewController.h; sourceTree = "<group>"; };
+		A3E12B371D8FC3AB0022BFDB /* TASystemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASystemViewController.m; sourceTree = "<group>"; };
+		A3E12B391D8FC4540022BFDB /* TAThrowPeopleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAThrowPeopleViewController.h; sourceTree = "<group>"; };
+		A3E12B3A1D8FC4540022BFDB /* TAThrowPeopleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAThrowPeopleViewController.m; sourceTree = "<group>"; };
+		A3E12B501D9003090022BFDB /* TASendGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASendGroupViewController.h; sourceTree = "<group>"; };
+		A3E12B511D9003090022BFDB /* TASendGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASendGroupViewController.m; sourceTree = "<group>"; };
+		D9B93AAD721B2864D6988ED0 /* Pods-TravelAgency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelAgency.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelAgency/Pods-TravelAgency.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +326,193 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A34177531D8E36FA00B343EA /* CoreLocation.framework in Frameworks */,
+				E2DCE25E4632B73CE0B9059F /* libPods-TravelAgency.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EEB99CAB9861735D94970DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9B93AAD721B2864D6988ED0 /* Pods-TravelAgency.debug.xcconfig */,
+				44742852462C2239F6E4FE47 /* Pods-TravelAgency.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A32225331D87949000B6F90E /* TAOrderListViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A32225341D8794B100B6F90E /* TAOrderListViewModel.h */,
+				A32225351D8794B100B6F90E /* TAOrderListViewModel.m */,
+			);
+			path = TAOrderListViewModel;
+			sourceTree = "<group>";
+		};
+		A33EE2361D863A590001E208 /* TALoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				A33EE23D1D863B1D0001E208 /* TALoadingView.h */,
+				A33EE23E1D863B1D0001E208 /* TALoadingView.m */,
+			);
+			path = TALoadingView;
+			sourceTree = "<group>";
+		};
+		A33EE2401D864AD60001E208 /* TALineListModel */ = {
+			isa = PBXGroup;
+			children = (
+				A33EE2411D864AEE0001E208 /* TALineListModel.h */,
+				A33EE2421D864AEE0001E208 /* TALineListModel.m */,
+				A3D758C51D891FFF006AF3D6 /* TALineInOwnerModel.h */,
+				A3D758C61D891FFF006AF3D6 /* TALineInOwnerModel.m */,
+			);
+			path = TALineListModel;
+			sourceTree = "<group>";
+		};
+		A33EE24C1D8694020001E208 /* TASystemMessagesController */ = {
+			isa = PBXGroup;
+			children = (
+				A33EE24D1D8694200001E208 /* TASystemMessageViewController.h */,
+				A33EE24E1D8694200001E208 /* TASystemMessageViewController.m */,
+			);
+			path = TASystemMessagesController;
+			sourceTree = "<group>";
+		};
+		A33EE2501D86954B0001E208 /* TAFriendViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A33EE2511D8695900001E208 /* TAFriendViewController.h */,
+				A33EE2521D8695900001E208 /* TAFriendViewController.m */,
+				A33EE2541D8696810001E208 /* TAAddFriendViewController.h */,
+				A33EE2551D8696810001E208 /* TAAddFriendViewController.m */,
+				A33EE2561D8696810001E208 /* TAAddFriendViewController.xib */,
+			);
+			path = TAFriendViewController;
+			sourceTree = "<group>";
+		};
+		A33EE2591D869E770001E208 /* TALineListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A33EE25A1D869EEF0001E208 /* TALineListViewController.h */,
+				A33EE25B1D869EF00001E208 /* TALineListViewController.m */,
+				A33EE25D1D869F570001E208 /* TAAddLineListViewController.h */,
+				A33EE25E1D869F570001E208 /* TAAddLineListViewController.m */,
+				A33EE25F1D869F570001E208 /* TAAddLineListViewController.xib */,
+			);
+			path = TALineListViewController;
+			sourceTree = "<group>";
+		};
+		A33EE2621D86AAC20001E208 /* TAMyBillViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A33EE2631D86AAD80001E208 /* TAMyBillViewController.h */,
+				A33EE2641D86AAD80001E208 /* TAMyBillViewController.m */,
+			);
+			path = TAMyBillViewController;
+			sourceTree = "<group>";
+		};
+		A33EE2661D86AB760001E208 /* TAMyOrderListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A33EE2671D86ABCE0001E208 /* TAMyOrderListViewController.h */,
+				A33EE2681D86ABCE0001E208 /* TAMyOrderListViewController.m */,
+			);
+			path = TAMyOrderListViewController;
+			sourceTree = "<group>";
+		};
+		A33EE26A1D86ACAC0001E208 /* TAChangePassWordViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A33EE26B1D86ACDB0001E208 /* TAChangePassWordViewController.h */,
+				A33EE26C1D86ACDB0001E208 /* TAChangePassWordViewController.m */,
+			);
+			path = TAChangePassWordViewController;
+			sourceTree = "<group>";
+		};
+		A34177371D8E216D00B343EA /* TASelfCenterViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A34177381D8E218F00B343EA /* TASelfCenterViewModel.h */,
+				A34177391D8E218F00B343EA /* TASelfCenterViewModel.m */,
+			);
+			path = TASelfCenterViewModel;
+			sourceTree = "<group>";
+		};
+		A341773B1D8E332100B343EA /* TASelectCityViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A34177611D8E408D00B343EA /* TAAddressPickerViewController.h */,
+				A34177621D8E408D00B343EA /* TAAddressPickerViewController.m */,
+				A341773C1D8E33B300B343EA /* TASelectCityViewController.h */,
+				A341773D1D8E33B300B343EA /* TASelectCityViewController.m */,
+			);
+			path = TASelectCityViewController;
+			sourceTree = "<group>";
+		};
+		A34177541D8E373400B343EA /* TALocationHeper */ = {
+			isa = PBXGroup;
+			children = (
+				A341775B1D8E375A00B343EA /* LNLocationManager.h */,
+				A341775C1D8E375A00B343EA /* LNLocationManager.m */,
+				A34177551D8E374B00B343EA /* LNSearchManager.h */,
+				A34177561D8E374B00B343EA /* LNSearchManager.m */,
+				A34177571D8E374B00B343EA /* LNLocationGeocoder.h */,
+				A34177581D8E374B00B343EA /* LNLocationGeocoder.m */,
+			);
+			path = TALocationHeper;
+			sourceTree = "<group>";
+		};
+		A375C6131D7ED1A700A80309 /* TAMainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A3BB10B41D82583A0044EA8D /* TAOwnerViewController */,
+				A3BB10B01D8257F10044EA8D /* TATouristViewController */,
+				A3BB10AC1D8257B80044EA8D /* TADriverViewController */,
+				A3BB10A61D824E990044EA8D /* TAJiaoDanViewController */,
+				A3BB10A21D824D970044EA8D /* TATravelController */,
+				A375C61E1D7EE1EC00A80309 /* TASelfPageViewVController */,
+			);
+			path = TAMainViewController;
+			sourceTree = "<group>";
+		};
+		A375C61E1D7EE1EC00A80309 /* TASelfPageViewVController */ = {
+			isa = PBXGroup;
+			children = (
+				A375C61F1D7EE21800A80309 /* TASelfCenterViewController.h */,
+				A375C6201D7EE21800A80309 /* TASelfCenterViewController.m */,
+				A3E12AF11D8F812C0022BFDB /* TAFillSelfMessageController */,
+				A3D758DD1D89502F006AF3D6 /* TAMyCarViewController */,
+				A33EE26A1D86ACAC0001E208 /* TAChangePassWordViewController */,
+				A33EE2661D86AB760001E208 /* TAMyOrderListViewController */,
+				A33EE2621D86AAC20001E208 /* TAMyBillViewController */,
+				A33EE2591D869E770001E208 /* TALineListViewController */,
+				A33EE2501D86954B0001E208 /* TAFriendViewController */,
+				A33EE24C1D8694020001E208 /* TASystemMessagesController */,
+			);
+			name = TASelfPageViewVController;
+			path = ../../TASelfPageViewVController;
+			sourceTree = "<group>";
+		};
+		A375C6271D7EE5F900A80309 /* TASelfCenterImage */ = {
+			isa = PBXGroup;
+			children = (
+				A375C6281D7EE5FF00A80309 /* S_6.png */,
+				A375C6291D7EE5FF00A80309 /* S_6@2x.png */,
+				A375C62A1D7EE5FF00A80309 /* S_6@3x.png */,
+			);
+			path = TASelfCenterImage;
+			sourceTree = "<group>";
+		};
 		A3986A0B1D7E68530032E931 = {
 			isa = PBXGroup;
 			children = (
 				A3986A161D7E68530032E931 /* TravelAgency */,
 				A3986A151D7E68530032E931 /* Products */,
+				1EEB99CAB9861735D94970DC /* Pods */,
+				FB43396792019E8CDF38226F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,14 +527,10 @@
 		A3986A161D7E68530032E931 /* TravelAgency */ = {
 			isa = PBXGroup;
 			children = (
-				A3986A1A1D7E68530032E931 /* AppDelegate.h */,
-				A3986A1B1D7E68530032E931 /* AppDelegate.m */,
-				A3986A1D1D7E68530032E931 /* ViewController.h */,
-				A3986A1E1D7E68530032E931 /* ViewController.m */,
-				A3986A201D7E68530032E931 /* Main.storyboard */,
-				A3986A231D7E68530032E931 /* Assets.xcassets */,
-				A3986A251D7E68530032E931 /* LaunchScreen.storyboard */,
-				A3986A281D7E68530032E931 /* Info.plist */,
+				A3986A2E1D7E691E0032E931 /* AppDelegate */,
+				A3986A2F1D7E691E0032E931 /* Resources */,
+				A3986A301D7E691E0032E931 /* Src */,
+				A3986A491D7E691E0032E931 /* UI */,
 				A3986A171D7E68530032E931 /* Supporting Files */,
 			);
 			path = TravelAgency;
@@ -74,9 +539,592 @@
 		A3986A171D7E68530032E931 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A34177491D8E360600B343EA /* cities.plist */,
+				A3986A281D7E68530032E931 /* Info.plist */,
 				A3986A181D7E68530032E931 /* main.m */,
+				A3986A611D7E730C0032E931 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3986A2E1D7E691E0032E931 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A3986A501D7E69370032E931 /* AppDelegate.h */,
+				A3986A511D7E69370032E931 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A3986A2F1D7E691E0032E931 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A3D758AC1D88E7DC006AF3D6 /* TACommonImage */,
+				A375C6271D7EE5F900A80309 /* TASelfCenterImage */,
+				A3986A6B1D7E8E3F0032E931 /* TALoginImage */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A3986A301D7E691E0032E931 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				A3986A311D7E691E0032E931 /* 3rd */,
+				A3986A661D7E77320032E931 /* TAConfig */,
+				A3986A331D7E691E0032E931 /* Helper */,
+				A3986A3A1D7E691E0032E931 /* Model */,
+				A3986A481D7E691E0032E931 /* ViewModel */,
+				A3986A3B1D7E691E0032E931 /* Network */,
+				A3986A321D7E691E0032E931 /* Controller */,
+				A3986A3E1D7E691E0032E931 /* View */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		A3986A311D7E691E0032E931 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		A3986A321D7E691E0032E931 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A341773B1D8E332100B343EA /* TASelectCityViewController */,
+				A3986A531D7E69840032E931 /* TAMidbodyViewController */,
+				A3986A5D1D7E72680032E931 /* TARegisterViewController */,
+				A3986A5C1D7E72400032E931 /* TALoginViewController */,
+				A375C6131D7ED1A700A80309 /* TAMainViewController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A3986A331D7E691E0032E931 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A34177541D8E373400B343EA /* TALocationHeper */,
+				A3986A621D7E74B50032E931 /* TACommonTool */,
+				A3986A371D7E691E0032E931 /* UIViewController+UIPreHelper */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A3986A371D7E691E0032E931 /* UIViewController+UIPreHelper */ = {
+			isa = PBXGroup;
+			children = (
+				A3986A381D7E691E0032E931 /* UIViewController+UIPreHelper.h */,
+				A3986A391D7E691E0032E931 /* UIViewController+UIPreHelper.m */,
+			);
+			path = "UIViewController+UIPreHelper";
+			sourceTree = "<group>";
+		};
+		A3986A3A1D7E691E0032E931 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3DAAFBE1D90E04200272F66 /* TATravelModel */,
+				A3D758D81D89485B006AF3D6 /* TAOwnerModel */,
+				A33EE2401D864AD60001E208 /* TALineListModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3986A3B1D7E691E0032E931 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A3986A3C1D7E691E0032E931 /* NetworkService.h */,
+				A3986A3D1D7E691E0032E931 /* NetworkService.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A3986A3E1D7E691E0032E931 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3CB2FB91D922521000D58CC /* UIDatePicker */,
+				A3CB2FB81D92250C000D58CC /* UIPickerView */,
+				A3E12AF71D8F8AA10022BFDB /* TAButton */,
+				A3E12AF61D8F8A950022BFDB /* TACell */,
+				A3D758CE1D893891006AF3D6 /* TAOwnerHeaderView */,
+				A33EE2361D863A590001E208 /* TALoadingView */,
+				A3BB10C81D829FC70044EA8D /* TAAlertView */,
+				A3986A5A1D7E71EC0032E931 /* TALoginAndRegisterStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3986A481D7E691E0032E931 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A34177371D8E216D00B343EA /* TASelfCenterViewModel */,
+				A3D758BE1D890101006AF3D6 /* TALineViewModel */,
+				A3D758BD1D88FF1B006AF3D6 /* TAOwnerViewModel */,
+				A3D758BC1D88FEEA006AF3D6 /* TATraveViewModel */,
+				A3D758BB1D88FEB2006AF3D6 /* TADriverViewModel */,
+				A3D758BA1D88FE96006AF3D6 /* TATouristViewModel */,
+				A3D758B91D88FE79006AF3D6 /* TAJiaoDanViewModel */,
+				A32225331D87949000B6F90E /* TAOrderListViewModel */,
+				A3BB10C41D8287890044EA8D /* TALoginAndRegisterViewModel */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A3986A491D7E691E0032E931 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A3986A231D7E68530032E931 /* Assets.xcassets */,
+				A3986A251D7E68530032E931 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A3986A531D7E69840032E931 /* TAMidbodyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A3986A541D7E69AD0032E931 /* TAMidbodyViewController.h */,
+				A3986A551D7E69AD0032E931 /* TAMidbodyViewController.m */,
+				A375C6051D7EC9FA00A80309 /* TABaseViewController.h */,
+				A375C6061D7EC9FA00A80309 /* TABaseViewController.m */,
+			);
+			path = TAMidbodyViewController;
+			sourceTree = "<group>";
+		};
+		A3986A5C1D7E72400032E931 /* TALoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A3986A5E1D7E72820032E931 /* TALoginViewController.h */,
+				A3986A5F1D7E72820032E931 /* TALoginViewController.m */,
+			);
+			name = TALoginViewController;
+			path = ../TALoginViewController;
+			sourceTree = "<group>";
+		};
+		A3986A5D1D7E72680032E931 /* TARegisterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A3A3F30E1D81799E0039CC31 /* TARegisterOneViewController.h */,
+				A3A3F30F1D81799E0039CC31 /* TARegisterOneViewController.m */,
+				A3A3F3101D81799E0039CC31 /* TARegisterViewController.h */,
+				A3A3F3111D81799E0039CC31 /* TARegisterViewController.m */,
+				A3A3F3121D81799E0039CC31 /* TARegisterViewController.xib */,
+			);
+			name = TARegisterViewController;
+			path = ../TARegisterViewController;
+			sourceTree = "<group>";
+		};
+		A3986A621D7E74B50032E931 /* TACommonTool */ = {
+			isa = PBXGroup;
+			children = (
+				A3986A631D7E74C60032E931 /* TACommonTool.h */,
+				A3986A641D7E74C60032E931 /* TACommonTool.m */,
+			);
+			path = TACommonTool;
+			sourceTree = "<group>";
+		};
+		A3986A661D7E77320032E931 /* TAConfig */ = {
+			isa = PBXGroup;
+			children = (
+				A3986A671D7E778D0032E931 /* AppMacro.h */,
+				A3986A681D7E778D0032E931 /* AppMacro.m */,
+				A3986A6A1D7E77950032E931 /* UtilsMacro.h */,
+			);
+			path = TAConfig;
+			sourceTree = "<group>";
+		};
+		A3986A6B1D7E8E3F0032E931 /* TALoginImage */ = {
+			isa = PBXGroup;
+			children = (
+				A3A3F3161D8182800039CC31 /* man_yes.png */,
+				A3A3F3171D8182800039CC31 /* man_yes@2x.png */,
+				A3A3F3181D8182800039CC31 /* man_yes@3x.png */,
+				A375C6181D7EDD4000A80309 /* banner.png */,
+				A375C6191D7EDD4000A80309 /* banner@2x.png */,
+				A375C61A1D7EDD4000A80309 /* banner@3x.png */,
+				A375C5FF1D7EC3A500A80309 /* navigation_back_w.png */,
+				A375C6001D7EC3A500A80309 /* navigation_back_w@2x.png */,
+				A375C6011D7EC3A500A80309 /* navigation_back_w@3x.png */,
+				A375C5E51D7EABA200A80309 /* smallLogin.png */,
+				A375C5E61D7EABA200A80309 /* smallLogin@2x.png */,
+				A375C5E71D7EABA200A80309 /* smallLogin@3x.png */,
+				A375C5DF1D7EAB9400A80309 /* MM.png */,
+				A375C5E01D7EAB9400A80309 /* MM@2x.png */,
+				A375C5E11D7EAB9400A80309 /* MM@3x.png */,
+				A375C5D31D7EAB2100A80309 /* page.png */,
+				A375C5D41D7EAB2100A80309 /* page@2x.png */,
+				A375C5D51D7EAB2100A80309 /* page@3x.png */,
+				A375C5D91D7EAB5400A80309 /* Lunch.png */,
+				A375C5DA1D7EAB5400A80309 /* Lunch@2x.png */,
+				A375C5DB1D7EAB5400A80309 /* Lunch@3x.png */,
+			);
+			path = TALoginImage;
+			sourceTree = "<group>";
+		};
+		A3BB10A21D824D970044EA8D /* TATravelController */ = {
+			isa = PBXGroup;
+			children = (
+				A3BB10A31D824DCA0044EA8D /* TATravelViewController.h */,
+				A3BB10A41D824DCA0044EA8D /* TATravelViewController.m */,
+				A3E12B4F1D9002EF0022BFDB /* TAGroupTravelViewController */,
+				A3E12B271D8F94310022BFDB /* TAQueryLineViewController */,
+			);
+			path = TATravelController;
+			sourceTree = "<group>";
+		};
+		A3BB10A61D824E990044EA8D /* TAJiaoDanViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A3BB10A71D824ED00044EA8D /* TAJiaoDanViewController.h */,
+				A3BB10A81D824ED00044EA8D /* TAJiaoDanViewController.m */,
+			);
+			path = TAJiaoDanViewController;
+			sourceTree = "<group>";
+		};
+		A3BB10AC1D8257B80044EA8D /* TADriverViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A3BB10AD1D8257CE0044EA8D /* TADriverViewController.h */,
+				A3BB10AE1D8257CE0044EA8D /* TADriverViewController.m */,
+			);
+			path = TADriverViewController;
+			sourceTree = "<group>";
+		};
+		A3BB10B01D8257F10044EA8D /* TATouristViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A3BB10B11D8258060044EA8D /* TATouristViewController.h */,
+				A3BB10B21D8258060044EA8D /* TATouristViewController.m */,
+			);
+			path = TATouristViewController;
+			sourceTree = "<group>";
+		};
+		A3BB10B41D82583A0044EA8D /* TAOwnerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A3BB10B51D8258530044EA8D /* TAOwnerViewController.h */,
+				A3BB10B61D8258530044EA8D /* TAOwnerViewController.m */,
+				A3D758A31D88E359006AF3D6 /* TACarPriceViewController */,
+			);
+			path = TAOwnerViewController;
+			sourceTree = "<group>";
+		};
+		A3BB10C41D8287890044EA8D /* TALoginAndRegisterViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A3BB10C51D8287AD0044EA8D /* TALoginAndRegisterViewModel.h */,
+				A3BB10C61D8287AD0044EA8D /* TALoginAndRegisterViewModel.m */,
+			);
+			path = TALoginAndRegisterViewModel;
+			sourceTree = "<group>";
+		};
+		A3BB10C81D829FC70044EA8D /* TAAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				A3BB10CC1D82A05D0044EA8D /* TAAlertView.h */,
+				A3BB10CD1D82A05D0044EA8D /* TAAlertView.m */,
+			);
+			path = TAAlertView;
+			sourceTree = "<group>";
+		};
+		A3CB2FB81D92250C000D58CC /* UIPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				A3CB2FBA1D922539000D58CC /* TAPickerView.h */,
+				A3CB2FBB1D922539000D58CC /* TAPickerView.m */,
+				A3CB2FBC1D922539000D58CC /* TAPickerView.xib */,
+				A3CB2FBD1D922539000D58CC /* TABasePickerView.h */,
+				A3CB2FBE1D922539000D58CC /* TABasePickerView.m */,
+			);
+			path = UIPickerView;
+			sourceTree = "<group>";
+		};
+		A3CB2FB91D922521000D58CC /* UIDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				A3CB2FC21D922615000D58CC /* WJDatePickerView.h */,
+				A3CB2FC31D922615000D58CC /* WJDatePickerView.m */,
+				A3CB2FC41D922615000D58CC /* datePickerView.h */,
+				A3CB2FC51D922615000D58CC /* datePickerView.m */,
+				A3CB2FC61D922615000D58CC /* datePickerView.xib */,
+			);
+			path = UIDatePicker;
+			sourceTree = "<group>";
+		};
+		A3D758A31D88E359006AF3D6 /* TACarPriceViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A3D758A41D88E369006AF3D6 /* TACarPriceViewController.h */,
+				A3D758A51D88E369006AF3D6 /* TACarPriceViewController.m */,
+				A3D758A71D88E500006AF3D6 /* TAAddCarPriceViewController.h */,
+				A3D758A81D88E500006AF3D6 /* TAAddCarPriceViewController.m */,
+				A3D758A91D88E500006AF3D6 /* TAAddCarPriceViewController.xib */,
+				A3D758C21D89046F006AF3D6 /* TAALLRouteViewController.h */,
+				A3D758C31D89046F006AF3D6 /* TAALLRouteViewController.m */,
+			);
+			path = TACarPriceViewController;
+			sourceTree = "<group>";
+		};
+		A3D758AC1D88E7DC006AF3D6 /* TACommonImage */ = {
+			isa = PBXGroup;
+			children = (
+				A3D758B31D88F90E006AF3D6 /* A.png */,
+				A3D758B41D88F90E006AF3D6 /* A@2x.png */,
+				A3D758B51D88F90F006AF3D6 /* A@3x.png */,
+			);
+			path = TACommonImage;
+			sourceTree = "<group>";
+		};
+		A3D758B91D88FE79006AF3D6 /* TAJiaoDanViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TAJiaoDanViewModel;
+			sourceTree = "<group>";
+		};
+		A3D758BA1D88FE96006AF3D6 /* TATouristViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TATouristViewModel;
+			sourceTree = "<group>";
+		};
+		A3D758BB1D88FEB2006AF3D6 /* TADriverViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TADriverViewModel;
+			sourceTree = "<group>";
+		};
+		A3D758BC1D88FEEA006AF3D6 /* TATraveViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TATraveViewModel;
+			sourceTree = "<group>";
+		};
+		A3D758BD1D88FF1B006AF3D6 /* TAOwnerViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A3D758D51D8946C2006AF3D6 /* TAOwnerViewModel.h */,
+				A3D758D61D8946C2006AF3D6 /* TAOwnerViewModel.m */,
+			);
+			path = TAOwnerViewModel;
+			sourceTree = "<group>";
+		};
+		A3D758BE1D890101006AF3D6 /* TALineViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A3D758BF1D890144006AF3D6 /* TALineViewModel.h */,
+				A3D758C01D890144006AF3D6 /* TALineViewModel.m */,
+			);
+			path = TALineViewModel;
+			sourceTree = "<group>";
+		};
+		A3D758CE1D893891006AF3D6 /* TAOwnerHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				A3D758CF1D8938AD006AF3D6 /* TAOwnerHeaderView.h */,
+				A3D758D01D8938AD006AF3D6 /* TAOwnerHeaderView.m */,
+			);
+			path = TAOwnerHeaderView;
+			sourceTree = "<group>";
+		};
+		A3D758D81D89485B006AF3D6 /* TAOwnerModel */ = {
+			isa = PBXGroup;
+			children = (
+				A3D758D91D894885006AF3D6 /* TAOwnerCarTypeModel */,
+			);
+			path = TAOwnerModel;
+			sourceTree = "<group>";
+		};
+		A3D758D91D894885006AF3D6 /* TAOwnerCarTypeModel */ = {
+			isa = PBXGroup;
+			children = (
+				A3D758DA1D89489C006AF3D6 /* TAOwnerCarTypeModel.h */,
+				A3D758DB1D89489C006AF3D6 /* TAOwnerCarTypeModel.m */,
+			);
+			path = TAOwnerCarTypeModel;
+			sourceTree = "<group>";
+		};
+		A3D758DD1D89502F006AF3D6 /* TAMyCarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A3D758DE1D895042006AF3D6 /* TAMyCarViewController.h */,
+				A3D758DF1D895042006AF3D6 /* TAMyCarViewController.m */,
+				A3D758E11D895100006AF3D6 /* TAAddMyCarViewController.h */,
+				A3D758E21D895100006AF3D6 /* TAAddMyCarViewController.m */,
+				A3D758E31D895100006AF3D6 /* TAAddMyCarViewController.xib */,
+			);
+			path = TAMyCarViewController;
+			sourceTree = "<group>";
+		};
+		A3DAAFB31D90D74B00272F66 /* TASendGroupCell */ = {
+			isa = PBXGroup;
+			children = (
+				A3DAAFB41D90D76A00272F66 /* TAFirstSectionCell.h */,
+				A3DAAFB51D90D76A00272F66 /* TAFirstSectionCell.m */,
+				A3DAAFB61D90D76A00272F66 /* TAFirstSectionCell.xib */,
+				A3DAAFB91D90D78500272F66 /* TASecondSectionCell.h */,
+				A3DAAFBA1D90D78500272F66 /* TASecondSectionCell.m */,
+				A3DAAFBB1D90D78500272F66 /* TASecondSectionCell.xib */,
+			);
+			path = TASendGroupCell;
+			sourceTree = "<group>";
+		};
+		A3DAAFBE1D90E04200272F66 /* TATravelModel */ = {
+			isa = PBXGroup;
+			children = (
+				A3DAAFC31D90E63700272F66 /* TATravelSendGroupSecondSectionModel */,
+				A3DAAFBF1D90E07400272F66 /* TATravelSendGroupFirstSectionModel */,
+			);
+			path = TATravelModel;
+			sourceTree = "<group>";
+		};
+		A3DAAFBF1D90E07400272F66 /* TATravelSendGroupFirstSectionModel */ = {
+			isa = PBXGroup;
+			children = (
+				A3DAAFC01D90E09900272F66 /* TATravelSendGroupFirstSectopnModel.h */,
+				A3DAAFC11D90E09900272F66 /* TATravelSendGroupFirstSectopnModel.m */,
+			);
+			path = TATravelSendGroupFirstSectionModel;
+			sourceTree = "<group>";
+		};
+		A3DAAFC31D90E63700272F66 /* TATravelSendGroupSecondSectionModel */ = {
+			isa = PBXGroup;
+			children = (
+				A3DAAFC41D90E65D00272F66 /* TATravelSendGroupSecondSectionModel.h */,
+				A3DAAFC51D90E65D00272F66 /* TATravelSendGroupSecondSectionModel.m */,
+			);
+			path = TATravelSendGroupSecondSectionModel;
+			sourceTree = "<group>";
+		};
+		A3E12AF11D8F812C0022BFDB /* TAFillSelfMessageController */ = {
+			isa = PBXGroup;
+			children = (
+				A3E12AF21D8F81520022BFDB /* TAFillSelfMessageViewController.h */,
+				A3E12AF31D8F81520022BFDB /* TAFillSelfMessageViewController.m */,
+			);
+			path = TAFillSelfMessageController;
+			sourceTree = "<group>";
+		};
+		A3E12AF61D8F8A950022BFDB /* TACell */ = {
+			isa = PBXGroup;
+			children = (
+				A3E12B041D8F8B560022BFDB /* TAFirstPageCell */,
+				A3E12B0A1D8F8B560022BFDB /* TAFriendMessageCell */,
+				A3E12B0B1D8F8B560022BFDB /* TAOwnerLineTableViewCell */,
+				A3E12B0F1D8F8B560022BFDB /* TASelectCItyCell */,
+			);
+			path = TACell;
+			sourceTree = "<group>";
+		};
+		A3E12AF71D8F8AA10022BFDB /* TAButton */ = {
+			isa = PBXGroup;
+			children = (
+				A3E12AF91D8F8B4D0022BFDB /* TACarSelectButton */,
+				A3E12AFC1D8F8B4D0022BFDB /* TASelectButton */,
+			);
+			path = TAButton;
+			sourceTree = "<group>";
+		};
+		A3E12AF91D8F8B4D0022BFDB /* TACarSelectButton */ = {
+			isa = PBXGroup;
+			children = (
+				A3E12AFA1D8F8B4D0022BFDB /* TACarSelectButton.h */,
+				A3E12AFB1D8F8B4D0022BFDB /* TACarSelectButton.m */,
+			);
+			path = TACarSelectButton;
+			sourceTree = "<group>";
+		};
+		A3E12AFC1D8F8B4D0022BFDB /* TASelectButton */ = {
+			isa = PBXGroup;
+			children = (
+				A3E12AFD1D8F8B4D0022BFDB /* TARoleButton.h */,
+				A3E12AFE1D8F8B4D0022BFDB /* TARoleButton.m */,
+				A3E12AFF1D8F8B4D0022BFDB /* TASelectButton.h */,
+				A3E12B001D8F8B4D0022BFDB /* TASelectButton.m */,
+			);
+			path = TASelectButton;
+			sourceTree = "<group>";
+		};
+		A3E12B041D8F8B560022BFDB /* TAFirstPageCell */ = {
+			isa = PBXGroup;
+			children = (
+				A3E12B051D8F8B560022BFDB /* TAFirstPageTableViewCell.h */,
+				A3E12B061D8F8B560022BFDB /* TAFirstPageTableViewCell.m */,
+				A3E12B071D8F8B560022BFDB /* TAFirstPageTableViewCell.xib */,
+				A3E12B081D8F8B560022BFDB /* TALineAndRegisterTableViewCell.h */,
+				A3E12B091D8F8B560022BFDB /* TALineAndRegisterTableViewCell.m */,
+			);
+			path = TAFirstPageCell;
+			sourceTree = "<group>";
+		};
+		A3E12B0A1D8F8B560022BFDB /* TAFriendMessageCell */ = {
+			isa = PBXGroup;
+			children = (
+				A3E12B1E1D8F8BBF0022BFDB /* TAFriendMessageCell.h */,
+				A3E12B1F1D8F8BBF0022BFDB /* TAFriendMessageCell.m */,
+				A3E12B201D8F8BBF0022BFDB /* TAFriendMessageCell.xib */,
+			);
+			path = TAFriendMessageCell;
+			sourceTree = "<group>";
+		};
+		A3E12B0B1D8F8B560022BFDB /* TAOwnerLineTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A3E12B0C1D8F8B560022BFDB /* TAOwnerLineTableViewCell.h */,
+				A3E12B0D1D8F8B560022BFDB /* TAOwnerLineTableViewCell.m */,
+				A3E12B0E1D8F8B560022BFDB /* TAOwnerLineTableViewCell.xib */,
+			);
+			path = TAOwnerLineTableViewCell;
+			sourceTree = "<group>";
+		};
+		A3E12B0F1D8F8B560022BFDB /* TASelectCItyCell */ = {
+			isa = PBXGroup;
+			children = (
+				A3E12B101D8F8B560022BFDB /* BCurrentCityCell.h */,
+				A3E12B111D8F8B560022BFDB /* BCurrentCityCell.m */,
+				A3E12B121D8F8B560022BFDB /* BHotCityCell.h */,
+				A3E12B131D8F8B560022BFDB /* BHotCityCell.m */,
+				A3E12B141D8F8B560022BFDB /* BRecentCityCell.h */,
+				A3E12B151D8F8B560022BFDB /* BRecentCityCell.m */,
+			);
+			path = TASelectCItyCell;
+			sourceTree = "<group>";
+		};
+		A3E12B271D8F94310022BFDB /* TAQueryLineViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A3E12B281D8F94420022BFDB /* TAQueryLineViewController.h */,
+				A3E12B291D8F94420022BFDB /* TAQueryLineViewController.m */,
+				A3E12B2A1D8F94420022BFDB /* TAQueryLineViewController.xib */,
+				A3E12B361D8FC3AB0022BFDB /* TASystemViewController.h */,
+				A3E12B371D8FC3AB0022BFDB /* TASystemViewController.m */,
+				A3E12B391D8FC4540022BFDB /* TAThrowPeopleViewController.h */,
+				A3E12B3A1D8FC4540022BFDB /* TAThrowPeopleViewController.m */,
+			);
+			path = TAQueryLineViewController;
+			sourceTree = "<group>";
+		};
+		A3E12B4F1D9002EF0022BFDB /* TAGroupTravelViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A3E12B501D9003090022BFDB /* TASendGroupViewController.h */,
+				A3E12B511D9003090022BFDB /* TASendGroupViewController.m */,
+				A3DAAFCA1D91252800272F66 /* TACheckViewController.h */,
+				A3DAAFCB1D91252800272F66 /* TACheckViewController.m */,
+				A3DAAFCC1D91252800272F66 /* TACheckViewController.xib */,
+				A3DAAFB31D90D74B00272F66 /* TASendGroupCell */,
+			);
+			path = TAGroupTravelViewController;
+			sourceTree = "<group>";
+		};
+		FB43396792019E8CDF38226F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A34177521D8E36FA00B343EA /* CoreLocation.framework */,
+				4232C126A6768E3022D77C58 /* libPods-TravelAgency.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +1134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3986A2B1D7E68530032E931 /* Build configuration list for PBXNativeTarget "TravelAgency" */;
 			buildPhases = (
+				19748AC15F32D9EFFDF9EBEA /* [CP] Check Pods Manifest.lock */,
 				A3986A101D7E68530032E931 /* Sources */,
 				A3986A111D7E68530032E931 /* Frameworks */,
 				A3986A121D7E68530032E931 /* Resources */,
+				DDC8F27D4FB4107CEB653735 /* [CP] Embed Pods Frameworks */,
+				3284E35C4589510EF4803C91 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -105,6 +1156,7 @@
 		A3986A0C1D7E68530032E931 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TA;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Gavin;
 				TargetAttributes = {
@@ -136,42 +1188,192 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3E12B171D8F8B560022BFDB /* TAFirstPageTableViewCell.xib in Resources */,
+				A3DAAFCE1D91252800272F66 /* TACheckViewController.xib in Resources */,
+				A3D758B61D88F90F006AF3D6 /* A.png in Resources */,
+				A375C5DE1D7EAB5400A80309 /* Lunch@3x.png in Resources */,
+				A375C6031D7EC3A500A80309 /* navigation_back_w@2x.png in Resources */,
+				A3A3F3151D81799E0039CC31 /* TARegisterViewController.xib in Resources */,
+				A33EE2581D8696810001E208 /* TAAddFriendViewController.xib in Resources */,
+				A375C5EA1D7EABA200A80309 /* smallLogin@3x.png in Resources */,
+				A3D758B71D88F90F006AF3D6 /* A@2x.png in Resources */,
 				A3986A271D7E68530032E931 /* LaunchScreen.storyboard in Resources */,
+				A375C5D61D7EAB2100A80309 /* page.png in Resources */,
+				A375C61C1D7EDD4000A80309 /* banner@2x.png in Resources */,
+				A375C5E41D7EAB9400A80309 /* MM@3x.png in Resources */,
+				A375C62C1D7EE5FF00A80309 /* S_6@2x.png in Resources */,
+				A375C5DD1D7EAB5400A80309 /* Lunch@2x.png in Resources */,
+				A3DAAFB81D90D76A00272F66 /* TAFirstSectionCell.xib in Resources */,
+				A375C62D1D7EE5FF00A80309 /* S_6@3x.png in Resources */,
+				A3DAAFBD1D90D78500272F66 /* TASecondSectionCell.xib in Resources */,
+				A3CB2FC91D922615000D58CC /* datePickerView.xib in Resources */,
+				A375C5E31D7EAB9400A80309 /* MM@2x.png in Resources */,
+				A3E12B1A1D8F8B560022BFDB /* TAOwnerLineTableViewCell.xib in Resources */,
+				A375C5E91D7EABA200A80309 /* smallLogin@2x.png in Resources */,
+				A33EE2611D869F570001E208 /* TAAddLineListViewController.xib in Resources */,
+				A375C5D81D7EAB2100A80309 /* page@3x.png in Resources */,
 				A3986A241D7E68530032E931 /* Assets.xcassets in Resources */,
-				A3986A221D7E68530032E931 /* Main.storyboard in Resources */,
+				A3986A5B1D7E71EC0032E931 /* TALoginAndRegisterStoryboard.storyboard in Resources */,
+				A375C5DC1D7EAB5400A80309 /* Lunch.png in Resources */,
+				A375C62B1D7EE5FF00A80309 /* S_6.png in Resources */,
+				A3A3F31A1D8182800039CC31 /* man_yes@2x.png in Resources */,
+				A341774B1D8E360600B343EA /* cities.plist in Resources */,
+				A3D758AB1D88E500006AF3D6 /* TAAddCarPriceViewController.xib in Resources */,
+				A375C5E21D7EAB9400A80309 /* MM.png in Resources */,
+				A3CB2FC01D922539000D58CC /* TAPickerView.xib in Resources */,
+				A3A3F31B1D8182800039CC31 /* man_yes@3x.png in Resources */,
+				A375C6041D7EC3A500A80309 /* navigation_back_w@3x.png in Resources */,
+				A375C5D71D7EAB2100A80309 /* page@2x.png in Resources */,
+				A3A3F3191D8182800039CC31 /* man_yes.png in Resources */,
+				A3E12B2C1D8F94420022BFDB /* TAQueryLineViewController.xib in Resources */,
+				A375C6021D7EC3A500A80309 /* navigation_back_w.png in Resources */,
+				A375C61D1D7EDD4000A80309 /* banner@3x.png in Resources */,
+				A3D758E51D895100006AF3D6 /* TAAddMyCarViewController.xib in Resources */,
+				A3D758B81D88F90F006AF3D6 /* A@3x.png in Resources */,
+				A3E12B221D8F8BBF0022BFDB /* TAFriendMessageCell.xib in Resources */,
+				A375C5E81D7EABA200A80309 /* smallLogin.png in Resources */,
+				A375C61B1D7EDD4000A80309 /* banner.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19748AC15F32D9EFFDF9EBEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3284E35C4589510EF4803C91 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelAgency/Pods-TravelAgency-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDC8F27D4FB4107CEB653735 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelAgency/Pods-TravelAgency-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A3986A101D7E68530032E931 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3986A1F1D7E68530032E931 /* ViewController.m in Sources */,
-				A3986A1C1D7E68530032E931 /* AppDelegate.m in Sources */,
+				A3E12B1D1D8F8B560022BFDB /* BRecentCityCell.m in Sources */,
+				A34177631D8E408D00B343EA /* TAAddressPickerViewController.m in Sources */,
+				A33EE25C1D869EF00001E208 /* TALineListViewController.m in Sources */,
+				A3E12B521D9003090022BFDB /* TASendGroupViewController.m in Sources */,
+				A3E12B161D8F8B560022BFDB /* TAFirstPageTableViewCell.m in Sources */,
+				A3986A561D7E69AD0032E931 /* TAMidbodyViewController.m in Sources */,
+				A33EE2601D869F570001E208 /* TAAddLineListViewController.m in Sources */,
+				A32225361D8794B100B6F90E /* TAOrderListViewModel.m in Sources */,
+				A3986A691D7E778D0032E931 /* AppMacro.m in Sources */,
+				A3E12B2B1D8F94420022BFDB /* TAQueryLineViewController.m in Sources */,
+				A3DAAFC61D90E65D00272F66 /* TATravelSendGroupSecondSectionModel.m in Sources */,
+				A3D758C71D891FFF006AF3D6 /* TALineInOwnerModel.m in Sources */,
+				A3BB10B71D8258530044EA8D /* TAOwnerViewController.m in Sources */,
+				A3BB10A91D824ED00044EA8D /* TAJiaoDanViewController.m in Sources */,
+				A341775D1D8E375A00B343EA /* LNLocationManager.m in Sources */,
+				A3DAAFC21D90E09900272F66 /* TATravelSendGroupFirstSectopnModel.m in Sources */,
+				A3E12B381D8FC3AB0022BFDB /* TASystemViewController.m in Sources */,
+				A3986A4B1D7E691E0032E931 /* UIViewController+UIPreHelper.m in Sources */,
+				A3D758AA1D88E500006AF3D6 /* TAAddCarPriceViewController.m in Sources */,
+				A3D758D71D8946C2006AF3D6 /* TAOwnerViewModel.m in Sources */,
+				A375C6071D7EC9FA00A80309 /* TABaseViewController.m in Sources */,
+				A3E12B1B1D8F8B560022BFDB /* BCurrentCityCell.m in Sources */,
+				A33EE2691D86ABCE0001E208 /* TAMyOrderListViewController.m in Sources */,
+				A3E12B011D8F8B4D0022BFDB /* TACarSelectButton.m in Sources */,
+				A3DAAFCD1D91252800272F66 /* TACheckViewController.m in Sources */,
+				A3BB10AF1D8257CE0044EA8D /* TADriverViewController.m in Sources */,
+				A3A3F3131D81799E0039CC31 /* TARegisterOneViewController.m in Sources */,
+				A3D758E01D895042006AF3D6 /* TAMyCarViewController.m in Sources */,
+				A3E12B031D8F8B4D0022BFDB /* TASelectButton.m in Sources */,
+				A33EE23F1D863B1D0001E208 /* TALoadingView.m in Sources */,
+				A3CB2FBF1D922539000D58CC /* TAPickerView.m in Sources */,
+				A3DAAFBC1D90D78500272F66 /* TASecondSectionCell.m in Sources */,
+				A375C6211D7EE21800A80309 /* TASelfCenterViewController.m in Sources */,
+				A3986A521D7E69370032E931 /* AppDelegate.m in Sources */,
+				A3E12AF41D8F81520022BFDB /* TAFillSelfMessageViewController.m in Sources */,
+				A3BB10CE1D82A05D0044EA8D /* TAAlertView.m in Sources */,
+				A341775A1D8E374B00B343EA /* LNLocationGeocoder.m in Sources */,
+				A3D758DC1D89489C006AF3D6 /* TAOwnerCarTypeModel.m in Sources */,
+				A33EE2431D864AEE0001E208 /* TALineListModel.m in Sources */,
+				A3E12B3B1D8FC4540022BFDB /* TAThrowPeopleViewController.m in Sources */,
+				A3E12B1C1D8F8B560022BFDB /* BHotCityCell.m in Sources */,
+				A3D758C41D89046F006AF3D6 /* TAALLRouteViewController.m in Sources */,
+				A3BB10B31D8258060044EA8D /* TATouristViewController.m in Sources */,
+				A3BB10A51D824DCA0044EA8D /* TATravelViewController.m in Sources */,
+				A3D758A61D88E369006AF3D6 /* TACarPriceViewController.m in Sources */,
+				A3D758C11D890144006AF3D6 /* TALineViewModel.m in Sources */,
+				A33EE24F1D8694200001E208 /* TASystemMessageViewController.m in Sources */,
+				A341773E1D8E33B300B343EA /* TASelectCityViewController.m in Sources */,
+				A33EE26D1D86ACDB0001E208 /* TAChangePassWordViewController.m in Sources */,
+				A3986A601D7E72820032E931 /* TALoginViewController.m in Sources */,
+				A33EE2531D8695900001E208 /* TAFriendViewController.m in Sources */,
+				A3BB10C71D8287AD0044EA8D /* TALoginAndRegisterViewModel.m in Sources */,
+				A3986A651D7E74C60032E931 /* TACommonTool.m in Sources */,
+				A3E12B021D8F8B4D0022BFDB /* TARoleButton.m in Sources */,
 				A3986A191D7E68530032E931 /* main.m in Sources */,
+				A3E12B191D8F8B560022BFDB /* TAOwnerLineTableViewCell.m in Sources */,
+				A33EE2651D86AAD80001E208 /* TAMyBillViewController.m in Sources */,
+				A34177591D8E374B00B343EA /* LNSearchManager.m in Sources */,
+				A3DAAFB71D90D76A00272F66 /* TAFirstSectionCell.m in Sources */,
+				A3D758E41D895100006AF3D6 /* TAAddMyCarViewController.m in Sources */,
+				A3CB2FC81D922615000D58CC /* datePickerView.m in Sources */,
+				A341773A1D8E218F00B343EA /* TASelfCenterViewModel.m in Sources */,
+				A3D758D11D8938AD006AF3D6 /* TAOwnerHeaderView.m in Sources */,
+				A3CB2FC11D922539000D58CC /* TABasePickerView.m in Sources */,
+				A3986A4C1D7E691E0032E931 /* NetworkService.m in Sources */,
+				A3A3F3141D81799E0039CC31 /* TARegisterViewController.m in Sources */,
+				A33EE2571D8696810001E208 /* TAAddFriendViewController.m in Sources */,
+				A3CB2FC71D922615000D58CC /* WJDatePickerView.m in Sources */,
+				A3E12B181D8F8B560022BFDB /* TALineAndRegisterTableViewCell.m in Sources */,
+				A3E12B211D8F8BBF0022BFDB /* TAFriendMessageCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A3986A201D7E68530032E931 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A3986A211D7E68530032E931 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A3986A251D7E68530032E931 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A3986A261D7E68530032E931 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -263,8 +1465,10 @@
 		};
 		A3986A2C1D7E68530032E931 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9B93AAD721B2864D6988ED0 /* Pods-TravelAgency.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TravelAgency/PrefixHeader.pch";
 				INFOPLIST_FILE = TravelAgency/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.9hrj.TravelAgency;
@@ -274,8 +1478,10 @@
 		};
 		A3986A2D1D7E68530032E931 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44742852462C2239F6E4FE47 /* Pods-TravelAgency.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TravelAgency/PrefixHeader.pch";
 				INFOPLIST_FILE = TravelAgency/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.9hrj.TravelAgency;
@@ -302,6 +1508,7 @@
 				A3986A2D1D7E68530032E931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

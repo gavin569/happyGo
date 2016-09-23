@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TARegisterViewController">
+            <connections>
+                <outlet property="loginPasswordTextField" destination="qzh-N0-XJy" id="BXL-H0-etk"/>
+                <outlet property="surePasswordTextField" destination="Jgb-RZ-dbQ" id="Ua9-Il-TkT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录密码:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c39-fJ-gNK">
+                    <rect key="frame" x="10" y="70" width="70" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="C2h-mh-wy3"/>
+                        <constraint firstAttribute="height" constant="30" id="pgc-cR-Qae"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qzh-N0-XJy">
+                    <rect key="frame" x="90" y="70" width="500" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Sb1-Z5-wTe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UqQ-9G-Lxc">
+                    <rect key="frame" x="0.0" y="105" width="600" height="1"/>
+                    <color key="backgroundColor" red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="bEZ-ga-ieq"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="确认密码:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFw-Z7-YaM">
+                    <rect key="frame" x="10" y="111" width="70" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="GBu-2p-Kct"/>
+                        <constraint firstAttribute="width" constant="70" id="Ilc-gm-ao0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jgb-RZ-dbQ">
+                    <rect key="frame" x="90" y="111" width="500" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="aDc-3f-dDV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1YM-u8-U7c">
+                    <rect key="frame" x="0.0" y="146" width="600" height="1"/>
+                    <color key="backgroundColor" red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="7X1-7E-2Ae"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UqQ-9G-Lxc" firstAttribute="top" secondItem="qzh-N0-XJy" secondAttribute="bottom" constant="5" id="1tm-Ld-Phe"/>
+                <constraint firstItem="qzh-N0-XJy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="442-eH-NV6"/>
+                <constraint firstItem="UqQ-9G-Lxc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9n1-0h-Ta3"/>
+                <constraint firstItem="1YM-u8-U7c" firstAttribute="top" secondItem="Jgb-RZ-dbQ" secondAttribute="bottom" constant="5" id="A67-vy-Dne"/>
+                <constraint firstItem="Jgb-RZ-dbQ" firstAttribute="top" secondItem="UqQ-9G-Lxc" secondAttribute="bottom" constant="5" id="Eaz-LJ-2Ro"/>
+                <constraint firstItem="1YM-u8-U7c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GiC-Wr-3x7"/>
+                <constraint firstItem="hFw-Z7-YaM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Lbs-RH-llX"/>
+                <constraint firstAttribute="trailing" secondItem="UqQ-9G-Lxc" secondAttribute="trailing" id="PTa-Dp-jS8"/>
+                <constraint firstAttribute="trailing" secondItem="Jgb-RZ-dbQ" secondAttribute="trailing" constant="10" id="RZy-yK-hnc"/>
+                <constraint firstAttribute="trailing" secondItem="qzh-N0-XJy" secondAttribute="trailing" constant="10" id="ZQq-hI-gp1"/>
+                <constraint firstItem="c39-fJ-gNK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="afi-hd-MKi"/>
+                <constraint firstItem="c39-fJ-gNK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="cgb-3O-OX1"/>
+                <constraint firstItem="Jgb-RZ-dbQ" firstAttribute="leading" secondItem="hFw-Z7-YaM" secondAttribute="trailing" constant="10" id="fXV-vQ-xze"/>
+                <constraint firstAttribute="trailing" secondItem="1YM-u8-U7c" secondAttribute="trailing" id="hFI-Bd-y52"/>
+                <constraint firstItem="hFw-Z7-YaM" firstAttribute="top" secondItem="UqQ-9G-Lxc" secondAttribute="bottom" constant="5" id="kgg-Ml-HSS"/>
+                <constraint firstItem="qzh-N0-XJy" firstAttribute="leading" secondItem="c39-fJ-gNK" secondAttribute="trailing" constant="10" id="td0-dw-dPF"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
