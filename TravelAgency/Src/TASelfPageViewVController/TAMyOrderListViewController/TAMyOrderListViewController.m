@@ -57,6 +57,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     TATravelOrderDetailViewController *detailVc=[[TATravelOrderDetailViewController alloc]init];
+    detailVc.model=_viewModel.orderListArr[indexPath.row];
     [self.navigationController pushViewController:detailVc animated:NO];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {

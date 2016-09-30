@@ -8,6 +8,7 @@
 
 #import "TATravelOrderDetailViewController.h"
 #import "TACollectionViewCell.h"
+#import "TAOrderSmallModel.h"
 @interface TATravelOrderDetailViewController ()
 
 @end
@@ -16,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title=@"订单详情";
     [self setupUI];
 }
 #pragma mark -- setup UI 
@@ -32,6 +34,11 @@
     _bomCollectionView.backgroundColor=COLOR_ffffff;
     UINib *nib=[UINib nibWithNibName:@"TACollectionViewCell" bundle:[NSBundle mainBundle]];
     [_bomCollectionView registerNib:nib forCellWithReuseIdentifier:@"TACollectionViewCell"];
+    _lineNameLab.text=_model.routesId;
+    _numberPeopleLab.text=_model.tourismNum;
+    _dateLab.text=_model.touristDate;
+    _phoneLab.text=_model.toursimPhone;
+    
     
 }
 #pragma mark --UICollectionViewDataSource
@@ -40,7 +47,7 @@
 
 -( NSInteger )collectionView:( UICollectionView *)collectionView numberOfItemsInSection:( NSInteger )section
 {
-    return 2;
+    return _model.smallArr.count;
 }
 //定义展示的Section的个数
 -( NSInteger )numberOfSectionsInCollectionView:( UICollectionView *)collectionView
@@ -52,6 +59,12 @@
 -( UICollectionViewCell *)collectionView:( UICollectionView *)collectionView cellForItemAtIndexPath:( NSIndexPath *)indexPath
 {
     TACollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier :@"TACollectionViewCell" forIndexPath :indexPath];
+    TAOrderSmallModel *model=_model.smallArr[indexPath.row];
+    cell.ZZLab.text=model.carName;
+    cell.SJNamelLab.text=model.carPhone;
+    cell.moneyLabA.text=model.payMoneyCar;
+    cell.DYLab.text=model.guideName;
+    cell.moneyLabB.text=model.payMoneyGuide;
     return cell;
 }
 
