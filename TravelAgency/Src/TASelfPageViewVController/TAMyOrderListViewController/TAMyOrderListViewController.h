@@ -7,10 +7,11 @@
 //
 
 #import "TABaseViewController.h"
-
+#import "TASelfCenterViewModel.h"
 @interface TAMyOrderListViewController : TABaseViewController<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UIView *topView;
 @property (nonatomic, strong) NSArray *titleArr;
 @property (nonatomic, strong) UITableView *orderTableView;
 @property (nonatomic, strong) NSMutableArray *orderListArr;
+@property (nonatomic, strong) TASelfCenterViewModel*viewModel;
 @end

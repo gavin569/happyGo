@@ -29,6 +29,25 @@ extern NSString *const REQUEST_SYSTEMMESSAGES;
 extern NSString *const REQUEST_FRIENDSLIST;
 /*!搜索好友列表*/
 extern NSString *const SEARCH_FRIENDSLIST;
+/*!一日游路线*/
+extern NSString *const REQUEST_ONEDAY_LINE;
+/*!团队游路线*/
+extern NSString *const REQUEST_ALLTEM_LINE;
+/*!交单路线详情*/
+extern NSString *const REQUEST_ROUTES;
+/*!交单*/
+extern NSString *const SUBMIT_ORDER;
+/*!添加好友*/
+extern NSString *const ADD_MYFRIEND;
+/*!我的账单*/
+extern NSString *const REQUEST_MYBILL;
+/*!查询旅行社线路*/
+extern NSString *const QUERY_TRAVELLINELIST;
+/*!查询旅行社订单*/
+extern NSString *const QUERY_TRAVELORDERLIST;
+/*!查询旅行社景点*/
+extern NSString *const QUERY_TRAVELALLSCENE;
+
 //颜色
 #define COLOR_ffffff [UIColor whiteColor]
 #define COLOR_999999 HEXCOLOR(0x999999)

@@ -14,5 +14,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *searchTextField;
 @property (nonatomic, strong) TASelfCenterViewModel *viewModel;
 @property (weak, nonatomic) IBOutlet UITableView *friendListTableView;
+@property (nonatomic, strong) NSMutableArray *friendListArr;
 
 @end

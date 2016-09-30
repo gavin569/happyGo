@@ -14,4 +14,10 @@ typedef void(^SuccessBlock)(NSArray*travelArray,NSArray*lineListArray);
 //请求车主的所有路线
 - (void)requestAllRoutesInOwnerSuccess:(SuccessBlock)success
                                failure:(void (^)())failure;
+//一日游路线
+- (void)requestOneDayLineSuccess:(SuccessBlock)success
+                         failure:(void (^)())failure;
+//团队游路线
+- (void)requestAllTeamLineSuccess:(SuccessBlock)success
+                         failure:(void (^)())failure;
 @end

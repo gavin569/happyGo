@@ -9,6 +9,8 @@
 #import "TAJiaoDanViewController.h"
 #import "TASelfCenterViewController.h"
 #import "TAAddressPickerViewController.h"
+#import "TAQueryLineMessageViewController.h"
+
 @interface TAJiaoDanViewController ()
 {
      NSTimer *_timer;
@@ -42,6 +44,8 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _viewModel=[[TALineViewModel alloc]init];
+    _jiaoDanViewModel=[[TAJiaoDanViewModel alloc]init];
     [self.navigationController.navigationBar setBarTintColor:COLOR_0073be];
     self.view.backgroundColor=COLOR_f1f1f1;
     self.navigationItem.title=@"交单";
@@ -53,6 +57,7 @@
     [self.view addSubview:self.topScroView];
     [self.view addSubview:self.pageControl];
     [self.view addSubview:self.topView];
+    [self requestLine];
 }
 #pragma mark -- Event Response
 - (void)leftItemClick {
@@ -85,7 +90,17 @@
 }
 //查询按钮触发的事件
 - (void)quaryButtonClick {
-    
+ int a=(int)[_lineArray indexOfObject:_lineNameStr];
+    NSString*index=[NSString stringWithFormat:@"%@",[_lineIdArr objectAtIndex:a]];
+    [_jiaoDanViewModel requestRoutesWithfixedLine:[index intValue] Success:^(NSArray *LineArray) {
+        TAQueryLineMessageViewController *lineMessageViewController=[[TAQueryLineMessageViewController alloc]init];
+        lineMessageViewController.index=index;
+        lineMessageViewController.lineMessageArr=LineArray;
+        [self.navigationController pushViewController:lineMessageViewController animated:YES];
+    } failure:^{
+      [TAAlertView showAlertWithTitle:@"温馨提示" message:@"请选择路线" cancelTitle:@"我知道了"];
+    }];
+
 }
 #pragma mark -- Private Method
 - (void)startRun {
@@ -98,6 +113,14 @@
     if (_pageControl.currentPage==3 || _pageControl.currentPage==0) {
         count = -count;
     }
+}
+- (void)requestLine{
+ [_viewModel requestOneDayLineSuccess:^(NSArray *travelArray, NSArray *lineListArray) {
+     [self.lineArray addObjectsFromArray:travelArray];
+     _lineIdArr=lineListArray;
+ } failure:^{
+
+ }];
 }
 #pragma mark -- GettersAndSetters
 - (UIView*)topScroView{
@@ -173,9 +196,9 @@
     }
     return _pickView;
 }
-- (NSArray*)lineArray {
+- (NSMutableArray*)lineArray {
     if (!_lineArray) {
-        _lineArray=[[NSArray alloc]initWithObjects:@"东线",@"西线",@"北线",@"南线",@"东线", nil];
+        _lineArray=[[NSMutableArray alloc]init];
     }
     return _lineArray;
 }

@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A30A9FE01D98B3D70003947A /* TAQueryLineMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A30A9FDF1D98B3D70003947A /* TAQueryLineMessageViewController.m */; };
+		A30A9FE41D98B5140003947A /* TAQueryLineMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A30A9FE21D98B5140003947A /* TAQueryLineMessageTableViewCell.m */; };
+		A30A9FE51D98B5140003947A /* TAQueryLineMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A30A9FE31D98B5140003947A /* TAQueryLineMessageTableViewCell.xib */; };
+		A30A9FE91D98B7570003947A /* TADetailLineMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A30A9FE71D98B7570003947A /* TADetailLineMessageViewController.m */; };
+		A30A9FEA1D98B7570003947A /* TADetailLineMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A30A9FE81D98B7570003947A /* TADetailLineMessageViewController.xib */; };
+		A30A9FED1D98CC3B0003947A /* TAJiaoDanViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A30A9FEC1D98CC3B0003947A /* TAJiaoDanViewModel.m */; };
+		A30A9FF11D98CEEC0003947A /* TAJiaoDanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A30A9FF01D98CEEC0003947A /* TAJiaoDanModel.m */; };
 		A32225361D8794B100B6F90E /* TAOrderListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A32225351D8794B100B6F90E /* TAOrderListViewModel.m */; };
+		A32791511D9A8F8B0076CBDB /* TASearchFriendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A32791501D9A8F8B0076CBDB /* TASearchFriendModel.m */; };
 		A33EE23F1D863B1D0001E208 /* TALoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A33EE23E1D863B1D0001E208 /* TALoadingView.m */; };
 		A33EE2431D864AEE0001E208 /* TALineListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A33EE2421D864AEE0001E208 /* TALineListModel.m */; };
 		A33EE24F1D8694200001E208 /* TASystemMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33EE24E1D8694200001E208 /* TASystemMessageViewController.m */; };
@@ -17,7 +25,6 @@
 		A33EE25C1D869EF00001E208 /* TALineListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33EE25B1D869EF00001E208 /* TALineListViewController.m */; };
 		A33EE2601D869F570001E208 /* TAAddLineListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33EE25E1D869F570001E208 /* TAAddLineListViewController.m */; };
 		A33EE2611D869F570001E208 /* TAAddLineListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33EE25F1D869F570001E208 /* TAAddLineListViewController.xib */; };
-		A33EE2651D86AAD80001E208 /* TAMyBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33EE2641D86AAD80001E208 /* TAMyBillViewController.m */; };
 		A33EE2691D86ABCE0001E208 /* TAMyOrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33EE2681D86ABCE0001E208 /* TAMyOrderListViewController.m */; };
 		A33EE26D1D86ACDB0001E208 /* TAChangePassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33EE26C1D86ACDB0001E208 /* TAChangePassWordViewController.m */; };
 		A341773A1D8E218F00B343EA /* TASelfCenterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A34177391D8E218F00B343EA /* TASelfCenterViewModel.m */; };
@@ -28,6 +35,19 @@
 		A341775A1D8E374B00B343EA /* LNLocationGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = A34177581D8E374B00B343EA /* LNLocationGeocoder.m */; };
 		A341775D1D8E375A00B343EA /* LNLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A341775C1D8E375A00B343EA /* LNLocationManager.m */; };
 		A34177631D8E408D00B343EA /* TAAddressPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A34177621D8E408D00B343EA /* TAAddressPickerViewController.m */; };
+		A3713ECF1D9CC2AC0054FE3D /* TATravelLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3713ECE1D9CC2AC0054FE3D /* TATravelLineModel.m */; };
+		A3713ED41D9CEB870054FE3D /* TAOrderSmallModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3713ED31D9CEB870054FE3D /* TAOrderSmallModel.m */; };
+		A3713ED71D9CEB9F0054FE3D /* TAOrderBigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3713ED61D9CEB9F0054FE3D /* TAOrderBigModel.m */; };
+		A3713EDB1D9CF5190054FE3D /* TAMyOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3713ED91D9CF5190054FE3D /* TAMyOrderTableViewCell.m */; };
+		A3713EDC1D9CF5190054FE3D /* TAMyOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3713EDA1D9CF5190054FE3D /* TAMyOrderTableViewCell.xib */; };
+		A3713EE51D9CF7670054FE3D /* TATravelOrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3713EE31D9CF7670054FE3D /* TATravelOrderDetailViewController.m */; };
+		A3713EE61D9CF7670054FE3D /* TATravelOrderDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3713EE41D9CF7670054FE3D /* TATravelOrderDetailViewController.xib */; };
+		A3713EEA1D9CFBEF0054FE3D /* TACollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3713EE81D9CFBEF0054FE3D /* TACollectionViewCell.m */; };
+		A3713EEB1D9CFBEF0054FE3D /* TACollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3713EE91D9CFBEF0054FE3D /* TACollectionViewCell.xib */; };
+		A3713EEE1D9D25ED0054FE3D /* TATravelSceneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3713EED1D9D25ED0054FE3D /* TATravelSceneViewController.m */; };
+		A3713EF21D9D265D0054FE3D /* TAScenceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3713EF01D9D265D0054FE3D /* TAScenceTableViewCell.m */; };
+		A3713EF31D9D265D0054FE3D /* TAScenceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3713EF11D9D265D0054FE3D /* TAScenceTableViewCell.xib */; };
+		A3713EF71D9D2BC60054FE3D /* TASenceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3713EF61D9D2BC60054FE3D /* TASenceModel.m */; };
 		A375C5D61D7EAB2100A80309 /* page.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C5D31D7EAB2100A80309 /* page.png */; };
 		A375C5D71D7EAB2100A80309 /* page@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C5D41D7EAB2100A80309 /* page@2x.png */; };
 		A375C5D81D7EAB2100A80309 /* page@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A375C5D51D7EAB2100A80309 /* page@3x.png */; };
@@ -75,12 +95,25 @@
 		A3BB10B71D8258530044EA8D /* TAOwnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BB10B61D8258530044EA8D /* TAOwnerViewController.m */; };
 		A3BB10C71D8287AD0044EA8D /* TALoginAndRegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BB10C61D8287AD0044EA8D /* TALoginAndRegisterViewModel.m */; };
 		A3BB10CE1D82A05D0044EA8D /* TAAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BB10CD1D82A05D0044EA8D /* TAAlertView.m */; };
+		A3C7007C1D9B6C0800230033 /* TAMyBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C7007A1D9B6C0800230033 /* TAMyBillViewController.m */; };
+		A3C7007D1D9B6C0800230033 /* TAMyBillViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3C7007B1D9B6C0800230033 /* TAMyBillViewController.xib */; };
+		A3C700811D9B6ECB00230033 /* TATBillTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C7007F1D9B6ECB00230033 /* TATBillTableViewCell.m */; };
+		A3C700821D9B6ECB00230033 /* TATBillTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3C700801D9B6ECB00230033 /* TATBillTableViewCell.xib */; };
+		A3C700861D9B7BBD00230033 /* TABillListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C700851D9B7BBD00230033 /* TABillListModel.m */; };
 		A3CB2FBF1D922539000D58CC /* TAPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CB2FBB1D922539000D58CC /* TAPickerView.m */; };
 		A3CB2FC01D922539000D58CC /* TAPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3CB2FBC1D922539000D58CC /* TAPickerView.xib */; };
 		A3CB2FC11D922539000D58CC /* TABasePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CB2FBE1D922539000D58CC /* TABasePickerView.m */; };
 		A3CB2FC71D922615000D58CC /* WJDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CB2FC31D922615000D58CC /* WJDatePickerView.m */; };
 		A3CB2FC81D922615000D58CC /* datePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CB2FC51D922615000D58CC /* datePickerView.m */; };
 		A3CB2FC91D922615000D58CC /* datePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3CB2FC61D922615000D58CC /* datePickerView.xib */; };
+		A3CD9E201D9C9F7000FBFC08 /* TATravelFillSelfMessgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CD9E1E1D9C9F7000FBFC08 /* TATravelFillSelfMessgeViewController.m */; };
+		A3CD9E211D9C9F7000FBFC08 /* TATravelFillSelfMessgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3CD9E1F1D9C9F7000FBFC08 /* TATravelFillSelfMessgeViewController.xib */; };
+		A3CD9E251D9CA5A900FBFC08 /* TALineListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CD9E231D9CA5A900FBFC08 /* TALineListTableViewCell.m */; };
+		A3CD9E261D9CA5A900FBFC08 /* TALineListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3CD9E241D9CA5A900FBFC08 /* TALineListTableViewCell.xib */; };
+		A3D26CF31D9A1EBB00D84C70 /* TAFriendListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D26CF11D9A1EBB00D84C70 /* TAFriendListTableViewCell.m */; };
+		A3D26CF41D9A1EBB00D84C70 /* TAFriendListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D26CF21D9A1EBB00D84C70 /* TAFriendListTableViewCell.xib */; };
+		A3D26CF81D9A250300D84C70 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D26CF71D9A250300D84C70 /* Base64.m */; };
+		A3D26CFF1D9A260700D84C70 /* TAFriendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D26CFE1D9A260700D84C70 /* TAFriendModel.m */; };
 		A3D758A61D88E369006AF3D6 /* TACarPriceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D758A51D88E369006AF3D6 /* TACarPriceViewController.m */; };
 		A3D758AA1D88E500006AF3D6 /* TAAddCarPriceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D758A81D88E500006AF3D6 /* TAAddCarPriceViewController.m */; };
 		A3D758AB1D88E500006AF3D6 /* TAAddCarPriceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D758A91D88E500006AF3D6 /* TAAddCarPriceViewController.xib */; };
@@ -129,8 +162,22 @@
 /* Begin PBXFileReference section */
 		4232C126A6768E3022D77C58 /* libPods-TravelAgency.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelAgency.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44742852462C2239F6E4FE47 /* Pods-TravelAgency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelAgency.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelAgency/Pods-TravelAgency.release.xcconfig"; sourceTree = "<group>"; };
+		A30A9FDE1D98B3D70003947A /* TAQueryLineMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAQueryLineMessageViewController.h; sourceTree = "<group>"; };
+		A30A9FDF1D98B3D70003947A /* TAQueryLineMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAQueryLineMessageViewController.m; sourceTree = "<group>"; };
+		A30A9FE11D98B5140003947A /* TAQueryLineMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAQueryLineMessageTableViewCell.h; sourceTree = "<group>"; };
+		A30A9FE21D98B5140003947A /* TAQueryLineMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAQueryLineMessageTableViewCell.m; sourceTree = "<group>"; };
+		A30A9FE31D98B5140003947A /* TAQueryLineMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAQueryLineMessageTableViewCell.xib; sourceTree = "<group>"; };
+		A30A9FE61D98B7570003947A /* TADetailLineMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADetailLineMessageViewController.h; sourceTree = "<group>"; };
+		A30A9FE71D98B7570003947A /* TADetailLineMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADetailLineMessageViewController.m; sourceTree = "<group>"; };
+		A30A9FE81D98B7570003947A /* TADetailLineMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TADetailLineMessageViewController.xib; sourceTree = "<group>"; };
+		A30A9FEB1D98CC3B0003947A /* TAJiaoDanViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAJiaoDanViewModel.h; sourceTree = "<group>"; };
+		A30A9FEC1D98CC3B0003947A /* TAJiaoDanViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAJiaoDanViewModel.m; sourceTree = "<group>"; };
+		A30A9FEF1D98CEEC0003947A /* TAJiaoDanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAJiaoDanModel.h; sourceTree = "<group>"; };
+		A30A9FF01D98CEEC0003947A /* TAJiaoDanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAJiaoDanModel.m; sourceTree = "<group>"; };
 		A32225341D8794B100B6F90E /* TAOrderListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAOrderListViewModel.h; sourceTree = "<group>"; };
 		A32225351D8794B100B6F90E /* TAOrderListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAOrderListViewModel.m; sourceTree = "<group>"; };
+		A327914F1D9A8F8B0076CBDB /* TASearchFriendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASearchFriendModel.h; sourceTree = "<group>"; };
+		A32791501D9A8F8B0076CBDB /* TASearchFriendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASearchFriendModel.m; sourceTree = "<group>"; };
 		A33EE23D1D863B1D0001E208 /* TALoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TALoadingView.h; sourceTree = "<group>"; };
 		A33EE23E1D863B1D0001E208 /* TALoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TALoadingView.m; sourceTree = "<group>"; };
 		A33EE2411D864AEE0001E208 /* TALineListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TALineListModel.h; sourceTree = "<group>"; };
@@ -147,8 +194,6 @@
 		A33EE25D1D869F570001E208 /* TAAddLineListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAddLineListViewController.h; sourceTree = "<group>"; };
 		A33EE25E1D869F570001E208 /* TAAddLineListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAddLineListViewController.m; sourceTree = "<group>"; };
 		A33EE25F1D869F570001E208 /* TAAddLineListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAAddLineListViewController.xib; sourceTree = "<group>"; };
-		A33EE2631D86AAD80001E208 /* TAMyBillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAMyBillViewController.h; sourceTree = "<group>"; };
-		A33EE2641D86AAD80001E208 /* TAMyBillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAMyBillViewController.m; sourceTree = "<group>"; };
 		A33EE2671D86ABCE0001E208 /* TAMyOrderListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAMyOrderListViewController.h; sourceTree = "<group>"; };
 		A33EE2681D86ABCE0001E208 /* TAMyOrderListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAMyOrderListViewController.m; sourceTree = "<group>"; };
 		A33EE26B1D86ACDB0001E208 /* TAChangePassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAChangePassWordViewController.h; sourceTree = "<group>"; };
@@ -167,6 +212,28 @@
 		A341775C1D8E375A00B343EA /* LNLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNLocationManager.m; sourceTree = "<group>"; };
 		A34177611D8E408D00B343EA /* TAAddressPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAddressPickerViewController.h; sourceTree = "<group>"; };
 		A34177621D8E408D00B343EA /* TAAddressPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAddressPickerViewController.m; sourceTree = "<group>"; };
+		A3713ECD1D9CC2AC0054FE3D /* TATravelLineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TATravelLineModel.h; sourceTree = "<group>"; };
+		A3713ECE1D9CC2AC0054FE3D /* TATravelLineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TATravelLineModel.m; sourceTree = "<group>"; };
+		A3713ED21D9CEB870054FE3D /* TAOrderSmallModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAOrderSmallModel.h; sourceTree = "<group>"; };
+		A3713ED31D9CEB870054FE3D /* TAOrderSmallModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAOrderSmallModel.m; sourceTree = "<group>"; };
+		A3713ED51D9CEB9F0054FE3D /* TAOrderBigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAOrderBigModel.h; sourceTree = "<group>"; };
+		A3713ED61D9CEB9F0054FE3D /* TAOrderBigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAOrderBigModel.m; sourceTree = "<group>"; };
+		A3713ED81D9CF5190054FE3D /* TAMyOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAMyOrderTableViewCell.h; sourceTree = "<group>"; };
+		A3713ED91D9CF5190054FE3D /* TAMyOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAMyOrderTableViewCell.m; sourceTree = "<group>"; };
+		A3713EDA1D9CF5190054FE3D /* TAMyOrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAMyOrderTableViewCell.xib; sourceTree = "<group>"; };
+		A3713EE21D9CF7670054FE3D /* TATravelOrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TATravelOrderDetailViewController.h; sourceTree = "<group>"; };
+		A3713EE31D9CF7670054FE3D /* TATravelOrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TATravelOrderDetailViewController.m; sourceTree = "<group>"; };
+		A3713EE41D9CF7670054FE3D /* TATravelOrderDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TATravelOrderDetailViewController.xib; sourceTree = "<group>"; };
+		A3713EE71D9CFBEF0054FE3D /* TACollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACollectionViewCell.h; sourceTree = "<group>"; };
+		A3713EE81D9CFBEF0054FE3D /* TACollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACollectionViewCell.m; sourceTree = "<group>"; };
+		A3713EE91D9CFBEF0054FE3D /* TACollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TACollectionViewCell.xib; sourceTree = "<group>"; };
+		A3713EEC1D9D25ED0054FE3D /* TATravelSceneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TATravelSceneViewController.h; sourceTree = "<group>"; };
+		A3713EED1D9D25ED0054FE3D /* TATravelSceneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TATravelSceneViewController.m; sourceTree = "<group>"; };
+		A3713EEF1D9D265D0054FE3D /* TAScenceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAScenceTableViewCell.h; sourceTree = "<group>"; };
+		A3713EF01D9D265D0054FE3D /* TAScenceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAScenceTableViewCell.m; sourceTree = "<group>"; };
+		A3713EF11D9D265D0054FE3D /* TAScenceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAScenceTableViewCell.xib; sourceTree = "<group>"; };
+		A3713EF51D9D2BC60054FE3D /* TASenceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASenceModel.h; sourceTree = "<group>"; };
+		A3713EF61D9D2BC60054FE3D /* TASenceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASenceModel.m; sourceTree = "<group>"; };
 		A375C5D31D7EAB2100A80309 /* page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page.png; sourceTree = "<group>"; };
 		A375C5D41D7EAB2100A80309 /* page@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page@2x.png"; sourceTree = "<group>"; };
 		A375C5D51D7EAB2100A80309 /* page@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page@3x.png"; sourceTree = "<group>"; };
@@ -236,6 +303,14 @@
 		A3BB10C61D8287AD0044EA8D /* TALoginAndRegisterViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TALoginAndRegisterViewModel.m; sourceTree = "<group>"; };
 		A3BB10CC1D82A05D0044EA8D /* TAAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAlertView.h; sourceTree = "<group>"; };
 		A3BB10CD1D82A05D0044EA8D /* TAAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAlertView.m; sourceTree = "<group>"; };
+		A3C700791D9B6C0800230033 /* TAMyBillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAMyBillViewController.h; sourceTree = "<group>"; };
+		A3C7007A1D9B6C0800230033 /* TAMyBillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAMyBillViewController.m; sourceTree = "<group>"; };
+		A3C7007B1D9B6C0800230033 /* TAMyBillViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAMyBillViewController.xib; sourceTree = "<group>"; };
+		A3C7007E1D9B6ECB00230033 /* TATBillTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TATBillTableViewCell.h; sourceTree = "<group>"; };
+		A3C7007F1D9B6ECB00230033 /* TATBillTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TATBillTableViewCell.m; sourceTree = "<group>"; };
+		A3C700801D9B6ECB00230033 /* TATBillTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TATBillTableViewCell.xib; sourceTree = "<group>"; };
+		A3C700841D9B7BBD00230033 /* TABillListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABillListModel.h; sourceTree = "<group>"; };
+		A3C700851D9B7BBD00230033 /* TABillListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TABillListModel.m; sourceTree = "<group>"; };
 		A3CB2FBA1D922539000D58CC /* TAPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPickerView.h; sourceTree = "<group>"; };
 		A3CB2FBB1D922539000D58CC /* TAPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPickerView.m; sourceTree = "<group>"; };
 		A3CB2FBC1D922539000D58CC /* TAPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAPickerView.xib; sourceTree = "<group>"; };
@@ -246,6 +321,19 @@
 		A3CB2FC41D922615000D58CC /* datePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = datePickerView.h; sourceTree = "<group>"; };
 		A3CB2FC51D922615000D58CC /* datePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = datePickerView.m; sourceTree = "<group>"; };
 		A3CB2FC61D922615000D58CC /* datePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = datePickerView.xib; sourceTree = "<group>"; };
+		A3CD9E1D1D9C9F7000FBFC08 /* TATravelFillSelfMessgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TATravelFillSelfMessgeViewController.h; sourceTree = "<group>"; };
+		A3CD9E1E1D9C9F7000FBFC08 /* TATravelFillSelfMessgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TATravelFillSelfMessgeViewController.m; sourceTree = "<group>"; };
+		A3CD9E1F1D9C9F7000FBFC08 /* TATravelFillSelfMessgeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TATravelFillSelfMessgeViewController.xib; sourceTree = "<group>"; };
+		A3CD9E221D9CA5A900FBFC08 /* TALineListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TALineListTableViewCell.h; sourceTree = "<group>"; };
+		A3CD9E231D9CA5A900FBFC08 /* TALineListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TALineListTableViewCell.m; sourceTree = "<group>"; };
+		A3CD9E241D9CA5A900FBFC08 /* TALineListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TALineListTableViewCell.xib; sourceTree = "<group>"; };
+		A3D26CF01D9A1EBB00D84C70 /* TAFriendListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAFriendListTableViewCell.h; sourceTree = "<group>"; };
+		A3D26CF11D9A1EBB00D84C70 /* TAFriendListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAFriendListTableViewCell.m; sourceTree = "<group>"; };
+		A3D26CF21D9A1EBB00D84C70 /* TAFriendListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAFriendListTableViewCell.xib; sourceTree = "<group>"; };
+		A3D26CF61D9A250300D84C70 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		A3D26CF71D9A250300D84C70 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		A3D26CFD1D9A260700D84C70 /* TAFriendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAFriendModel.h; sourceTree = "<group>"; };
+		A3D26CFE1D9A260700D84C70 /* TAFriendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAFriendModel.m; sourceTree = "<group>"; };
 		A3D758A41D88E369006AF3D6 /* TACarPriceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACarPriceViewController.h; sourceTree = "<group>"; };
 		A3D758A51D88E369006AF3D6 /* TACarPriceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACarPriceViewController.m; sourceTree = "<group>"; };
 		A3D758A71D88E500006AF3D6 /* TAAddCarPriceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAddCarPriceViewController.h; sourceTree = "<group>"; };
@@ -343,6 +431,30 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A30A9FDD1D98B3890003947A /* TAQueryLineMessageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A30A9FDE1D98B3D70003947A /* TAQueryLineMessageViewController.h */,
+				A30A9FDF1D98B3D70003947A /* TAQueryLineMessageViewController.m */,
+				A30A9FE11D98B5140003947A /* TAQueryLineMessageTableViewCell.h */,
+				A30A9FE21D98B5140003947A /* TAQueryLineMessageTableViewCell.m */,
+				A30A9FE31D98B5140003947A /* TAQueryLineMessageTableViewCell.xib */,
+				A30A9FE61D98B7570003947A /* TADetailLineMessageViewController.h */,
+				A30A9FE71D98B7570003947A /* TADetailLineMessageViewController.m */,
+				A30A9FE81D98B7570003947A /* TADetailLineMessageViewController.xib */,
+			);
+			path = TAQueryLineMessageViewController;
+			sourceTree = "<group>";
+		};
+		A30A9FEE1D98CED80003947A /* TAJiaoDanModel */ = {
+			isa = PBXGroup;
+			children = (
+				A30A9FEF1D98CEEC0003947A /* TAJiaoDanModel.h */,
+				A30A9FF01D98CEEC0003947A /* TAJiaoDanModel.m */,
+			);
+			path = TAJiaoDanModel;
+			sourceTree = "<group>";
+		};
 		A32225331D87949000B6F90E /* TAOrderListViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,6 +480,8 @@
 				A33EE2421D864AEE0001E208 /* TALineListModel.m */,
 				A3D758C51D891FFF006AF3D6 /* TALineInOwnerModel.h */,
 				A3D758C61D891FFF006AF3D6 /* TALineInOwnerModel.m */,
+				A3713ECD1D9CC2AC0054FE3D /* TATravelLineModel.h */,
+				A3713ECE1D9CC2AC0054FE3D /* TATravelLineModel.m */,
 			);
 			path = TALineListModel;
 			sourceTree = "<group>";
@@ -386,6 +500,9 @@
 			children = (
 				A33EE2511D8695900001E208 /* TAFriendViewController.h */,
 				A33EE2521D8695900001E208 /* TAFriendViewController.m */,
+				A3D26CF01D9A1EBB00D84C70 /* TAFriendListTableViewCell.h */,
+				A3D26CF11D9A1EBB00D84C70 /* TAFriendListTableViewCell.m */,
+				A3D26CF21D9A1EBB00D84C70 /* TAFriendListTableViewCell.xib */,
 				A33EE2541D8696810001E208 /* TAAddFriendViewController.h */,
 				A33EE2551D8696810001E208 /* TAAddFriendViewController.m */,
 				A33EE2561D8696810001E208 /* TAAddFriendViewController.xib */,
@@ -401,6 +518,14 @@
 				A33EE25D1D869F570001E208 /* TAAddLineListViewController.h */,
 				A33EE25E1D869F570001E208 /* TAAddLineListViewController.m */,
 				A33EE25F1D869F570001E208 /* TAAddLineListViewController.xib */,
+				A3CD9E221D9CA5A900FBFC08 /* TALineListTableViewCell.h */,
+				A3CD9E231D9CA5A900FBFC08 /* TALineListTableViewCell.m */,
+				A3CD9E241D9CA5A900FBFC08 /* TALineListTableViewCell.xib */,
+				A3713EEC1D9D25ED0054FE3D /* TATravelSceneViewController.h */,
+				A3713EED1D9D25ED0054FE3D /* TATravelSceneViewController.m */,
+				A3713EEF1D9D265D0054FE3D /* TAScenceTableViewCell.h */,
+				A3713EF01D9D265D0054FE3D /* TAScenceTableViewCell.m */,
+				A3713EF11D9D265D0054FE3D /* TAScenceTableViewCell.xib */,
 			);
 			path = TALineListViewController;
 			sourceTree = "<group>";
@@ -408,8 +533,12 @@
 		A33EE2621D86AAC20001E208 /* TAMyBillViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A33EE2631D86AAD80001E208 /* TAMyBillViewController.h */,
-				A33EE2641D86AAD80001E208 /* TAMyBillViewController.m */,
+				A3C700791D9B6C0800230033 /* TAMyBillViewController.h */,
+				A3C7007A1D9B6C0800230033 /* TAMyBillViewController.m */,
+				A3C7007B1D9B6C0800230033 /* TAMyBillViewController.xib */,
+				A3C7007E1D9B6ECB00230033 /* TATBillTableViewCell.h */,
+				A3C7007F1D9B6ECB00230033 /* TATBillTableViewCell.m */,
+				A3C700801D9B6ECB00230033 /* TATBillTableViewCell.xib */,
 			);
 			path = TAMyBillViewController;
 			sourceTree = "<group>";
@@ -419,6 +548,15 @@
 			children = (
 				A33EE2671D86ABCE0001E208 /* TAMyOrderListViewController.h */,
 				A33EE2681D86ABCE0001E208 /* TAMyOrderListViewController.m */,
+				A3713ED81D9CF5190054FE3D /* TAMyOrderTableViewCell.h */,
+				A3713ED91D9CF5190054FE3D /* TAMyOrderTableViewCell.m */,
+				A3713EDA1D9CF5190054FE3D /* TAMyOrderTableViewCell.xib */,
+				A3713EE21D9CF7670054FE3D /* TATravelOrderDetailViewController.h */,
+				A3713EE31D9CF7670054FE3D /* TATravelOrderDetailViewController.m */,
+				A3713EE41D9CF7670054FE3D /* TATravelOrderDetailViewController.xib */,
+				A3713EE71D9CFBEF0054FE3D /* TACollectionViewCell.h */,
+				A3713EE81D9CFBEF0054FE3D /* TACollectionViewCell.m */,
+				A3713EE91D9CFBEF0054FE3D /* TACollectionViewCell.xib */,
 			);
 			path = TAMyOrderListViewController;
 			sourceTree = "<group>";
@@ -463,6 +601,33 @@
 				A34177581D8E374B00B343EA /* LNLocationGeocoder.m */,
 			);
 			path = TALocationHeper;
+			sourceTree = "<group>";
+		};
+		A3713ED01D9CEAFD0054FE3D /* TAOrderBigModel */ = {
+			isa = PBXGroup;
+			children = (
+				A3713ED51D9CEB9F0054FE3D /* TAOrderBigModel.h */,
+				A3713ED61D9CEB9F0054FE3D /* TAOrderBigModel.m */,
+			);
+			path = TAOrderBigModel;
+			sourceTree = "<group>";
+		};
+		A3713ED11D9CEB2F0054FE3D /* TAOrderSmallModel */ = {
+			isa = PBXGroup;
+			children = (
+				A3713ED21D9CEB870054FE3D /* TAOrderSmallModel.h */,
+				A3713ED31D9CEB870054FE3D /* TAOrderSmallModel.m */,
+			);
+			path = TAOrderSmallModel;
+			sourceTree = "<group>";
+		};
+		A3713EF41D9D2BB40054FE3D /* TASenceModel */ = {
+			isa = PBXGroup;
+			children = (
+				A3713EF51D9D2BC60054FE3D /* TASenceModel.h */,
+				A3713EF61D9D2BC60054FE3D /* TASenceModel.m */,
+			);
+			path = TASenceModel;
 			sourceTree = "<group>";
 		};
 		A375C6131D7ED1A700A80309 /* TAMainViewController */ = {
@@ -584,6 +749,7 @@
 		A3986A311D7E691E0032E931 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				A3D26CF51D9A250300D84C70 /* Base64 */,
 			);
 			path = 3rd;
 			sourceTree = "<group>";
@@ -622,6 +788,12 @@
 		A3986A3A1D7E691E0032E931 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A3713EF41D9D2BB40054FE3D /* TASenceModel */,
+				A3713ED11D9CEB2F0054FE3D /* TAOrderSmallModel */,
+				A3713ED01D9CEAFD0054FE3D /* TAOrderBigModel */,
+				A3C700831D9B7BAA00230033 /* TABillModel */,
+				A3D26CF91D9A25B200D84C70 /* TAFriendModel */,
+				A30A9FEE1D98CED80003947A /* TAJiaoDanModel */,
 				A3DAAFBE1D90E04200272F66 /* TATravelModel */,
 				A3D758D81D89485B006AF3D6 /* TAOwnerModel */,
 				A33EE2401D864AD60001E208 /* TALineListModel */,
@@ -775,6 +947,7 @@
 			children = (
 				A3BB10A71D824ED00044EA8D /* TAJiaoDanViewController.h */,
 				A3BB10A81D824ED00044EA8D /* TAJiaoDanViewController.m */,
+				A30A9FDD1D98B3890003947A /* TAQueryLineMessageViewController */,
 			);
 			path = TAJiaoDanViewController;
 			sourceTree = "<group>";
@@ -825,6 +998,15 @@
 			path = TAAlertView;
 			sourceTree = "<group>";
 		};
+		A3C700831D9B7BAA00230033 /* TABillModel */ = {
+			isa = PBXGroup;
+			children = (
+				A3C700841D9B7BBD00230033 /* TABillListModel.h */,
+				A3C700851D9B7BBD00230033 /* TABillListModel.m */,
+			);
+			path = TABillModel;
+			sourceTree = "<group>";
+		};
 		A3CB2FB81D92250C000D58CC /* UIPickerView */ = {
 			isa = PBXGroup;
 			children = (
@@ -847,6 +1029,26 @@
 				A3CB2FC61D922615000D58CC /* datePickerView.xib */,
 			);
 			path = UIDatePicker;
+			sourceTree = "<group>";
+		};
+		A3D26CF51D9A250300D84C70 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				A3D26CF61D9A250300D84C70 /* Base64.h */,
+				A3D26CF71D9A250300D84C70 /* Base64.m */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		A3D26CF91D9A25B200D84C70 /* TAFriendModel */ = {
+			isa = PBXGroup;
+			children = (
+				A3D26CFD1D9A260700D84C70 /* TAFriendModel.h */,
+				A3D26CFE1D9A260700D84C70 /* TAFriendModel.m */,
+				A327914F1D9A8F8B0076CBDB /* TASearchFriendModel.h */,
+				A32791501D9A8F8B0076CBDB /* TASearchFriendModel.m */,
+			);
+			path = TAFriendModel;
 			sourceTree = "<group>";
 		};
 		A3D758A31D88E359006AF3D6 /* TACarPriceViewController */ = {
@@ -876,6 +1078,8 @@
 		A3D758B91D88FE79006AF3D6 /* TAJiaoDanViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A30A9FEB1D98CC3B0003947A /* TAJiaoDanViewModel.h */,
+				A30A9FEC1D98CC3B0003947A /* TAJiaoDanViewModel.m */,
 			);
 			path = TAJiaoDanViewModel;
 			sourceTree = "<group>";
@@ -1002,6 +1206,9 @@
 			children = (
 				A3E12AF21D8F81520022BFDB /* TAFillSelfMessageViewController.h */,
 				A3E12AF31D8F81520022BFDB /* TAFillSelfMessageViewController.m */,
+				A3CD9E1D1D9C9F7000FBFC08 /* TATravelFillSelfMessgeViewController.h */,
+				A3CD9E1E1D9C9F7000FBFC08 /* TATravelFillSelfMessgeViewController.m */,
+				A3CD9E1F1D9C9F7000FBFC08 /* TATravelFillSelfMessgeViewController.xib */,
 			);
 			path = TAFillSelfMessageController;
 			sourceTree = "<group>";
@@ -1191,12 +1398,15 @@
 				A3E12B171D8F8B560022BFDB /* TAFirstPageTableViewCell.xib in Resources */,
 				A3DAAFCE1D91252800272F66 /* TACheckViewController.xib in Resources */,
 				A3D758B61D88F90F006AF3D6 /* A.png in Resources */,
+				A30A9FE51D98B5140003947A /* TAQueryLineMessageTableViewCell.xib in Resources */,
 				A375C5DE1D7EAB5400A80309 /* Lunch@3x.png in Resources */,
 				A375C6031D7EC3A500A80309 /* navigation_back_w@2x.png in Resources */,
 				A3A3F3151D81799E0039CC31 /* TARegisterViewController.xib in Resources */,
 				A33EE2581D8696810001E208 /* TAAddFriendViewController.xib in Resources */,
 				A375C5EA1D7EABA200A80309 /* smallLogin@3x.png in Resources */,
 				A3D758B71D88F90F006AF3D6 /* A@2x.png in Resources */,
+				A3713EDC1D9CF5190054FE3D /* TAMyOrderTableViewCell.xib in Resources */,
+				A3D26CF41D9A1EBB00D84C70 /* TAFriendListTableViewCell.xib in Resources */,
 				A3986A271D7E68530032E931 /* LaunchScreen.storyboard in Resources */,
 				A375C5D61D7EAB2100A80309 /* page.png in Resources */,
 				A375C61C1D7EDD4000A80309 /* banner@2x.png in Resources */,
@@ -1207,8 +1417,13 @@
 				A375C62D1D7EE5FF00A80309 /* S_6@3x.png in Resources */,
 				A3DAAFBD1D90D78500272F66 /* TASecondSectionCell.xib in Resources */,
 				A3CB2FC91D922615000D58CC /* datePickerView.xib in Resources */,
+				A3C7007D1D9B6C0800230033 /* TAMyBillViewController.xib in Resources */,
+				A3713EE61D9CF7670054FE3D /* TATravelOrderDetailViewController.xib in Resources */,
+				A3C700821D9B6ECB00230033 /* TATBillTableViewCell.xib in Resources */,
+				A3CD9E211D9C9F7000FBFC08 /* TATravelFillSelfMessgeViewController.xib in Resources */,
 				A375C5E31D7EAB9400A80309 /* MM@2x.png in Resources */,
 				A3E12B1A1D8F8B560022BFDB /* TAOwnerLineTableViewCell.xib in Resources */,
+				A30A9FEA1D98B7570003947A /* TADetailLineMessageViewController.xib in Resources */,
 				A375C5E91D7EABA200A80309 /* smallLogin@2x.png in Resources */,
 				A33EE2611D869F570001E208 /* TAAddLineListViewController.xib in Resources */,
 				A375C5D81D7EAB2100A80309 /* page@3x.png in Resources */,
@@ -1222,6 +1437,7 @@
 				A375C5E21D7EAB9400A80309 /* MM.png in Resources */,
 				A3CB2FC01D922539000D58CC /* TAPickerView.xib in Resources */,
 				A3A3F31B1D8182800039CC31 /* man_yes@3x.png in Resources */,
+				A3713EEB1D9CFBEF0054FE3D /* TACollectionViewCell.xib in Resources */,
 				A375C6041D7EC3A500A80309 /* navigation_back_w@3x.png in Resources */,
 				A375C5D71D7EAB2100A80309 /* page@2x.png in Resources */,
 				A3A3F3191D8182800039CC31 /* man_yes.png in Resources */,
@@ -1230,6 +1446,8 @@
 				A375C61D1D7EDD4000A80309 /* banner@3x.png in Resources */,
 				A3D758E51D895100006AF3D6 /* TAAddMyCarViewController.xib in Resources */,
 				A3D758B81D88F90F006AF3D6 /* A@3x.png in Resources */,
+				A3713EF31D9D265D0054FE3D /* TAScenceTableViewCell.xib in Resources */,
+				A3CD9E261D9CA5A900FBFC08 /* TALineListTableViewCell.xib in Resources */,
 				A3E12B221D8F8BBF0022BFDB /* TAFriendMessageCell.xib in Resources */,
 				A375C5E81D7EABA200A80309 /* smallLogin.png in Resources */,
 				A375C61B1D7EDD4000A80309 /* banner.png in Resources */,
@@ -1297,45 +1515,63 @@
 				A3E12B521D9003090022BFDB /* TASendGroupViewController.m in Sources */,
 				A3E12B161D8F8B560022BFDB /* TAFirstPageTableViewCell.m in Sources */,
 				A3986A561D7E69AD0032E931 /* TAMidbodyViewController.m in Sources */,
+				A30A9FE01D98B3D70003947A /* TAQueryLineMessageViewController.m in Sources */,
 				A33EE2601D869F570001E208 /* TAAddLineListViewController.m in Sources */,
 				A32225361D8794B100B6F90E /* TAOrderListViewModel.m in Sources */,
 				A3986A691D7E778D0032E931 /* AppMacro.m in Sources */,
 				A3E12B2B1D8F94420022BFDB /* TAQueryLineViewController.m in Sources */,
+				A32791511D9A8F8B0076CBDB /* TASearchFriendModel.m in Sources */,
 				A3DAAFC61D90E65D00272F66 /* TATravelSendGroupSecondSectionModel.m in Sources */,
 				A3D758C71D891FFF006AF3D6 /* TALineInOwnerModel.m in Sources */,
 				A3BB10B71D8258530044EA8D /* TAOwnerViewController.m in Sources */,
 				A3BB10A91D824ED00044EA8D /* TAJiaoDanViewController.m in Sources */,
+				A3713ED41D9CEB870054FE3D /* TAOrderSmallModel.m in Sources */,
 				A341775D1D8E375A00B343EA /* LNLocationManager.m in Sources */,
 				A3DAAFC21D90E09900272F66 /* TATravelSendGroupFirstSectopnModel.m in Sources */,
 				A3E12B381D8FC3AB0022BFDB /* TASystemViewController.m in Sources */,
+				A30A9FED1D98CC3B0003947A /* TAJiaoDanViewModel.m in Sources */,
 				A3986A4B1D7E691E0032E931 /* UIViewController+UIPreHelper.m in Sources */,
+				A3713ED71D9CEB9F0054FE3D /* TAOrderBigModel.m in Sources */,
 				A3D758AA1D88E500006AF3D6 /* TAAddCarPriceViewController.m in Sources */,
+				A3D26CF81D9A250300D84C70 /* Base64.m in Sources */,
+				A3713EDB1D9CF5190054FE3D /* TAMyOrderTableViewCell.m in Sources */,
 				A3D758D71D8946C2006AF3D6 /* TAOwnerViewModel.m in Sources */,
+				A3713EEA1D9CFBEF0054FE3D /* TACollectionViewCell.m in Sources */,
 				A375C6071D7EC9FA00A80309 /* TABaseViewController.m in Sources */,
 				A3E12B1B1D8F8B560022BFDB /* BCurrentCityCell.m in Sources */,
 				A33EE2691D86ABCE0001E208 /* TAMyOrderListViewController.m in Sources */,
 				A3E12B011D8F8B4D0022BFDB /* TACarSelectButton.m in Sources */,
+				A3D26CF31D9A1EBB00D84C70 /* TAFriendListTableViewCell.m in Sources */,
 				A3DAAFCD1D91252800272F66 /* TACheckViewController.m in Sources */,
 				A3BB10AF1D8257CE0044EA8D /* TADriverViewController.m in Sources */,
 				A3A3F3131D81799E0039CC31 /* TARegisterOneViewController.m in Sources */,
 				A3D758E01D895042006AF3D6 /* TAMyCarViewController.m in Sources */,
+				A30A9FE91D98B7570003947A /* TADetailLineMessageViewController.m in Sources */,
 				A3E12B031D8F8B4D0022BFDB /* TASelectButton.m in Sources */,
 				A33EE23F1D863B1D0001E208 /* TALoadingView.m in Sources */,
+				A3C7007C1D9B6C0800230033 /* TAMyBillViewController.m in Sources */,
 				A3CB2FBF1D922539000D58CC /* TAPickerView.m in Sources */,
 				A3DAAFBC1D90D78500272F66 /* TASecondSectionCell.m in Sources */,
 				A375C6211D7EE21800A80309 /* TASelfCenterViewController.m in Sources */,
+				A3CD9E201D9C9F7000FBFC08 /* TATravelFillSelfMessgeViewController.m in Sources */,
 				A3986A521D7E69370032E931 /* AppDelegate.m in Sources */,
 				A3E12AF41D8F81520022BFDB /* TAFillSelfMessageViewController.m in Sources */,
 				A3BB10CE1D82A05D0044EA8D /* TAAlertView.m in Sources */,
+				A3713EEE1D9D25ED0054FE3D /* TATravelSceneViewController.m in Sources */,
+				A30A9FE41D98B5140003947A /* TAQueryLineMessageTableViewCell.m in Sources */,
+				A30A9FF11D98CEEC0003947A /* TAJiaoDanModel.m in Sources */,
 				A341775A1D8E374B00B343EA /* LNLocationGeocoder.m in Sources */,
+				A3713EF21D9D265D0054FE3D /* TAScenceTableViewCell.m in Sources */,
 				A3D758DC1D89489C006AF3D6 /* TAOwnerCarTypeModel.m in Sources */,
 				A33EE2431D864AEE0001E208 /* TALineListModel.m in Sources */,
 				A3E12B3B1D8FC4540022BFDB /* TAThrowPeopleViewController.m in Sources */,
+				A3713ECF1D9CC2AC0054FE3D /* TATravelLineModel.m in Sources */,
 				A3E12B1C1D8F8B560022BFDB /* BHotCityCell.m in Sources */,
 				A3D758C41D89046F006AF3D6 /* TAALLRouteViewController.m in Sources */,
 				A3BB10B31D8258060044EA8D /* TATouristViewController.m in Sources */,
 				A3BB10A51D824DCA0044EA8D /* TATravelViewController.m in Sources */,
 				A3D758A61D88E369006AF3D6 /* TACarPriceViewController.m in Sources */,
+				A3D26CFF1D9A260700D84C70 /* TAFriendModel.m in Sources */,
 				A3D758C11D890144006AF3D6 /* TALineViewModel.m in Sources */,
 				A33EE24F1D8694200001E208 /* TASystemMessageViewController.m in Sources */,
 				A341773E1D8E33B300B343EA /* TASelectCityViewController.m in Sources */,
@@ -1345,15 +1581,19 @@
 				A3BB10C71D8287AD0044EA8D /* TALoginAndRegisterViewModel.m in Sources */,
 				A3986A651D7E74C60032E931 /* TACommonTool.m in Sources */,
 				A3E12B021D8F8B4D0022BFDB /* TARoleButton.m in Sources */,
+				A3C700811D9B6ECB00230033 /* TATBillTableViewCell.m in Sources */,
 				A3986A191D7E68530032E931 /* main.m in Sources */,
+				A3713EE51D9CF7670054FE3D /* TATravelOrderDetailViewController.m in Sources */,
+				A3C700861D9B7BBD00230033 /* TABillListModel.m in Sources */,
 				A3E12B191D8F8B560022BFDB /* TAOwnerLineTableViewCell.m in Sources */,
-				A33EE2651D86AAD80001E208 /* TAMyBillViewController.m in Sources */,
 				A34177591D8E374B00B343EA /* LNSearchManager.m in Sources */,
 				A3DAAFB71D90D76A00272F66 /* TAFirstSectionCell.m in Sources */,
 				A3D758E41D895100006AF3D6 /* TAAddMyCarViewController.m in Sources */,
 				A3CB2FC81D922615000D58CC /* datePickerView.m in Sources */,
+				A3713EF71D9D2BC60054FE3D /* TASenceModel.m in Sources */,
 				A341773A1D8E218F00B343EA /* TASelfCenterViewModel.m in Sources */,
 				A3D758D11D8938AD006AF3D6 /* TAOwnerHeaderView.m in Sources */,
+				A3CD9E251D9CA5A900FBFC08 /* TALineListTableViewCell.m in Sources */,
 				A3CB2FC11D922539000D58CC /* TABasePickerView.m in Sources */,
 				A3986A4C1D7E691E0032E931 /* NetworkService.m in Sources */,
 				A3A3F3141D81799E0039CC31 /* TARegisterViewController.m in Sources */,

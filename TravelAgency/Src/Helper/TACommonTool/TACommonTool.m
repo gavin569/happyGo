@@ -108,6 +108,7 @@ NSString *const KUSER_INFO_KEY = @"KUSER_INFO_KEY";
 {
     [USER_DEFAULTS removeObjectForKey:KUSER_INFO_KEY];
 }
+//事件排序
 + (NSArray*)rankInArrWithArrary:(NSArray*)arr {
     arr = (NSMutableArray *)[arr sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
@@ -125,4 +126,39 @@ NSString *const KUSER_INFO_KEY = @"KUSER_INFO_KEY";
     }];
     return arr;
 }
++ (NSString*)dictionaryToJson:(NSDictionary *)dic{
+    NSError *parseError = nil;
+    
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:&parseError];
+    
+    return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+}
++ (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString{
+    if (jsonString == nil) {
+        
+        return nil;
+        
+    }
+    
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    
+    NSError *err;
+    
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
+                         
+                                                        options:NSJSONReadingMutableContainers
+                         
+                                                          error:&err];
+    
+    if(err) {
+        
+        
+        return nil;
+        
+    }
+    
+    return dic;
+    
+}
+
 @end

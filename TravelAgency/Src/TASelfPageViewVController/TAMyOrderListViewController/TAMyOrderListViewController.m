@@ -7,35 +7,46 @@
 //
 
 #import "TAMyOrderListViewController.h"
-
+#import "TAMyOrderTableViewCell.h"
+#import "TATravelOrderDetailViewController.h"
+#import "TAOrderBigModel.h"
 @interface TAMyOrderListViewController ()
 {
     UIView *_tipView;
     int _index;
+    int _orderStatus;
 }
 @end
 
 @implementation TAMyOrderListViewController
-
+#pragma mark -- view life cycle
+- (void)viewWillAppear:(BOOL)animated {
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title=@"我的订单";
     [self.view addSubview:self.topView];
     [self.view addSubview:self.orderTableView];
+    [self createViewModel];
+    _orderStatus=0;
+    [self refresh];
+
 }
 #pragma mark -- UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return self.orderListArr.count;
+    return _viewModel.orderListArr.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *cellId=@"cellId";
-    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:cellId];
+    TAMyOrderTableViewCell*cell = [tableView dequeueReusableCellWithIdentifier:@"TAMyOrderTableViewCell"];
     if (!cell) {
-        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"TAMyOrderTableViewCell" owner:nil options:nil] firstObject];
     }
-    cell.textLabel.text=self.orderListArr[indexPath.row];
+    TAOrderBigModel*model=_viewModel.orderListArr[indexPath.row];
+    cell.phoneLab.text=[NSString stringWithFormat:@"%@",model.toursimPhone];
+    cell.nunberPeopleLab.text=model.tourismNum;
     return cell;
     
 }
@@ -45,6 +56,8 @@
 #pragma mark -- UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    TATravelOrderDetailViewController *detailVc=[[TATravelOrderDetailViewController alloc]init];
+    [self.navigationController pushViewController:detailVc animated:NO];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     return 0.01;
@@ -70,75 +83,82 @@
     switch (_index) {
         case 1:
         {
-            NSArray *arr=[[NSArray alloc]initWithObjects:@"1",@"1", @"1", @"1", @"1",  nil];
-            [self.orderListArr removeAllObjects];
-            [self.orderListArr addObjectsFromArray:arr];
-            [_orderTableView reloadData];
+            _orderStatus=0;
+            [self refresh];
         }
             break;
         case 2:
         {
-            NSArray *arr=[[NSArray alloc]initWithObjects:@"2",@"2", @"2", @"2", @"2",  nil];
-            [_orderListArr removeAllObjects];
-            [_orderListArr addObjectsFromArray:arr];
-            [_orderTableView reloadData];
+            _orderStatus=1;
+            [self refresh];
         }
             break;
         case 3:
         {
-            NSArray *arr=[[NSArray alloc]initWithObjects:@"3",@"3", @"3", @"3", @"3",  nil];
-             [_orderListArr removeAllObjects];
-            [_orderListArr addObjectsFromArray:arr];
-            [_orderTableView reloadData];
+            _orderStatus=2;
+             [self refresh];
         }
             break;
-        case 4:
-        {
-            NSArray *arr=[[NSArray alloc]initWithObjects:@"4",@"4", @"4", @"4", @"4",  nil];
-             [_orderListArr removeAllObjects];
-            [_orderListArr addObjectsFromArray:arr];
-            [_orderTableView reloadData];
-        }
-            break;
-        case 5:
-        {
-            NSArray *arr=[[NSArray alloc]initWithObjects:@"5",@"5", @"5", @"5", @"5",  nil];
-             [_orderListArr removeAllObjects];
-            [_orderListArr addObjectsFromArray:arr];
-            [_orderTableView reloadData];
-        }
-            break;
-            
         default:
             break;
     }
     
 }
+- (void)createViewModel
+{
+    _viewModel=[[TASelfCenterViewModel alloc]init];
+    
+    __block UITableView *bTableView = _orderTableView;
+    
+    _viewModel.refreshCompletion = ^(BOOL noMore) {
+        [bTableView reloadData];
+        [bTableView.mj_header endRefreshing];
+        [bTableView.mj_footer endRefreshing];
+        
+        if (noMore)
+        {
+            [bTableView.mj_footer setHidden:YES];
+        }
+        else {
+            [bTableView.mj_footer setHidden:NO];
+            
+        }
+        
+    };
+    
+    _viewModel.activeFailure = ^ {
+        [bTableView.mj_header endRefreshing];
+        [bTableView.mj_footer endRefreshing];
+    };
+}
+- (void)refresh{
+     [_viewModel refreshTravelOrderListWithStatus:_orderStatus];
+}
+- (void)loadMore{
+     [_viewModel loadMoreTravelOrderListWithStatus:_orderStatus];
+}
+
 #pragma mark -- GettersAndSettings
 - (UIView*)topView {
     if (!_topView) {
         _topView=[[UIView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, 40)];
-        for (int i=0; i<5; i++) {
+        for (int i=0; i<3; i++) {
             UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-            btn.frame = CGRectMake(i*SCREEN_WIDTH/5, 2, SCREEN_WIDTH/5, 34);
+            btn.frame = CGRectMake(i*SCREEN_WIDTH/3, 2, SCREEN_WIDTH/3, 34);
             btn.titleLabel.font=SYS_F(12);
-            //按钮不动的状态
             [btn setTitle:self.titleArr[i] forState:UIControlStateNormal];
-            //没有选中状态下的颜色
             [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-            //选中状态下的颜色
             [btn setTitleColor:[UIColor blackColor] forState:UIControlStateSelected];
             btn.tag = i+1;
             [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
 
             [_topView addSubview:btn];
-            //加载按钮上边的三角小图片
             if (i==0) {
                 _tipView = [[UIView alloc]init];
                 _tipView.center = CGPointMake(btn.center.x, 34);
                 _tipView.backgroundColor=[UIColor redColor];
 
-                _tipView.bounds = CGRectMake(0, 0,(SCREEN_WIDTH/5)-5, 1);
+                _tipView.bounds = CGRectMake(0, 0,(SCREEN_WIDTH/3)-5, 1);
                 [_topView addSubview:_tipView];
                 //默认第一个按钮选中
                 btn.selected = YES;
@@ -152,7 +172,7 @@
 }
 - (NSArray*)titleArr {
     if (!_titleArr) {
-        _titleArr=[[NSArray alloc]initWithObjects:@"全部",@"未接单",@"已接单",@"未支付",@"已支付", nil];
+        _titleArr=[[NSArray alloc]initWithObjects:@"全部",@"未接单",@"已接单", nil];
     }
     return _titleArr;
 }
@@ -172,6 +192,11 @@
         _orderTableView.showsVerticalScrollIndicator=NO;
         _orderTableView.showsHorizontalScrollIndicator=NO;
         self.automaticallyAdjustsScrollViewInsets = NO;
+        _orderTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refresh)];
+        _orderTableView.mj_footer = [MJRefreshAutoStateFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMore)];
+        _orderTableView.mj_footer.automaticallyHidden = NO;
+        _orderTableView.mj_footer.hidden = YES;
+        
     }
     return _orderTableView;
 }

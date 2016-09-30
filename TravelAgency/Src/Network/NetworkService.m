@@ -15,8 +15,8 @@
     dispatch_once(&onceToken, ^{
         sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:ROOT_URL]];
 //  如果提交数据是JSON的,需要将请求格式设置为AFJSONRequestSerializer,如果不是JSON,可以不用设置
-                sessionManager.responseSerializer = [AFJSONResponseSerializer serializer];
-                sessionManager.requestSerializer = [AFJSONRequestSerializer serializer];
+//                sessionManager.responseSerializer = [AFJSONResponseSerializer serializer];
+//                sessionManager.requestSerializer = [AFJSONRequestSerializer serializer];
         sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",@"text/plain",nil];
     });
     return sessionManager;
@@ -41,8 +41,9 @@
                    success:(DictionaryBlock)success
                    failure:(void (^)())failure{
     
-    url = [[ROOT_URL stringByAppendingString:url] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-    [[self sessionManager] POST:url parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+//    url = [[ROOT_URL stringByAppendingString:url] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    NSString*urlStr=[NSString stringWithFormat:@"%@",url];
+    [[self sessionManager] POST:urlStr parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         success(responseObject);
@@ -116,6 +117,66 @@
                          success:(DictionaryBlock)success
                          failure:(void (^)())failure {
     NSString*url=[NSString stringWithFormat:@"%@?userPhone=%@&userName=%@",SEARCH_FRIENDSLIST,userPhone,userName];
+    [self getRequestWithURL:url parameters:nil success:success failure:failure];
+}
+//查询一日游路线
++ (void)requestOneDayLinesuccess:(DictionaryBlock)success
+                         failure:(void (^)())failure {
+    NSString*url=[NSString stringWithFormat:@"%@",REQUEST_ONEDAY_LINE];
+    [self getRequestWithURL:url parameters:nil success:success failure:failure];
+}
+//查询团队游路线
++ (void)requestAllTeamLinesuccess:(DictionaryBlock)success
+                          failure:(void (^)())failure {
+    NSString*url=[NSString stringWithFormat:@"%@",REQUEST_ALLTEM_LINE];
+    [self getRequestWithURL:url parameters:nil success:success failure:failure];
+}
+//查询交单界面路线
++ (void)serachRoutesInJiaoDanWithFixedLine:(int)fixedLine
+                                   success:(DictionaryBlock)success
+                                   failure:(void (^)())failure{
+    NSString*url=[NSString stringWithFormat:@"%@?fixedLine=%d",REQUEST_ROUTES,fixedLine];
+    [self getRequestWithURL:url parameters:nil success:success failure:failure];
+}
+//提交交单订单
++ (void)submitOrderWithDictionary:(NSDictionary*)dic
+                          success:(DictionaryBlock)success
+                          failure:(void (^)())failure{
+    [self postRequestWithURL:SUBMIT_ORDER parameters:dic success:success failure:failure];
+}
+//添加好友
++ (void)addFriendsWithFriendMessageDictionary:(NSDictionary*)dic
+                                      success:(DictionaryBlock)success
+                                      failure:(void (^)())failure{
+    [self postRequestWithURL:ADD_MYFRIEND parameters:dic success:success failure:failure];
+}
+//请求我的账单
++ (void)requestMyBillListWithUserPhone:(NSString*)userPhone
+                               Success:(DictionaryBlock)success
+                               failure:(void (^)())failure {
+    NSString*url=[NSString stringWithFormat:@"%@?userPhone=%@",REQUEST_MYBILL,userPhone];
+    [self getRequestWithURL:url parameters:nil success:success failure:failure];
+}
+//请求旅行社的路线
++ (void)requestTravelLinesListWithUserPhone:(NSString*)userPhone
+                                    Success:(DictionaryBlock)success
+                                    failure:(void (^)())failure {
+    NSString*url=[NSString stringWithFormat:@"%@?userPhone=%@",QUERY_TRAVELLINELIST,userPhone];
+    [self getRequestWithURL:url parameters:nil success:success failure:failure];
+}
+//请求旅行社订单
++ (void)requestTraveOrdersListWithUserPhone:(NSString*)userPhone
+                                       page:(int)pageNo
+                                orderStatus:(int)orderStatus
+                                    Success:(DictionaryBlock)success
+                                    failure:(void (^)())failure {
+    NSString*url=[NSString stringWithFormat:@"%@?userPhone=%@&pageNo=%d&orderStatus=%d",QUERY_TRAVELORDERLIST,userPhone,pageNo,orderStatus];
+    [self getRequestWithURL:url parameters:nil success:success failure:failure];
+}
+//查询所有景点
++ (void)requestAllSencesSuccess:(DictionaryBlock)success
+                        failure:(void (^)())failure {
+    NSString*url=[NSString stringWithFormat:@"%@",QUERY_TRAVELALLSCENE];
     [self getRequestWithURL:url parameters:nil success:success failure:failure];
 }
 @end

@@ -8,6 +8,7 @@
 
 #import "TALineViewModel.h"
 #import "TALineInOwnerModel.h"
+#import "TALineListModel.h"
 @implementation TALineViewModel
 - (instancetype)init
 {
@@ -44,6 +45,37 @@
             [self.lineListArr addObject:smallArr];
         }
         success(_travelArr,_lineListArr);
+    } failure:^{
+        
+    }];
+}
+//一日游路线
+- (void)requestOneDayLineSuccess:(SuccessBlock)success
+                         failure:(void (^)())failure{
+   [NetworkService requestOneDayLinesuccess:^(NSDictionary *result) {
+       NSArray *arr=result[@"fixedLineList"];
+       NSMutableArray *lineModelArr=[[NSMutableArray alloc]init];
+       NSMutableArray *lineIdArr=[[NSMutableArray alloc]init];
+       for (int i=0; i<arr.count; i++) {
+           TALineListModel*model=[[TALineListModel alloc]initWithDictionary:arr[i]];
+           NSString *lineName=model.lineName;
+           NSString *lineId=[NSString stringWithFormat:@"%@",model.fixedLine];
+
+           [lineModelArr addObject:lineName];
+           [lineIdArr addObject:lineId];
+       }
+       
+       success(lineModelArr,lineIdArr);
+       
+   } failure:^{
+       
+   }];
+}
+//团队游路线
+- (void)requestAllTeamLineSuccess:(SuccessBlock)success
+                          failure:(void (^)())failure{
+    [NetworkService requestAllTeamLinesuccess:^(NSDictionary *result) {
+         NSLog(@"---%@",result);
     } failure:^{
         
     }];

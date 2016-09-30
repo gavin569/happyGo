@@ -26,5 +26,9 @@
 + (void)setUserInfo:(NSMutableDictionary *)dict;
 + (NSMutableDictionary *)userInfo;
 + (void)removeUserInfo;
+//时间排序
 + (NSArray*)rankInArrWithArrary:(NSArray*)arr;
+//字典转字符串
++ (NSString*)dictionaryToJson:(NSDictionary *)dic;
++ (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString;
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "TAAddLineListViewController.h"
-
+#import "TATravelSceneViewController.h"
 @interface TAAddLineListViewController ()
 
 @end
@@ -21,7 +21,13 @@
 }
 #pragma mark -- Event Response
 - (IBAction)contentViewedClick:(id)sender {
-     [self.view endEditing:YES];  
+     [self.view endEditing:YES];
+    TATravelSceneViewController *sceneViewController=[[TATravelSceneViewController alloc]init];
+    sceneViewController.sceneBlock=^(NSString*sceneString){
+        _lineContentLab.text=sceneString;
+        NSLog(@"---%@",sceneString);
+    };
+    [self.navigationController pushViewController:sceneViewController animated:NO];
 }
 //提交按钮触发的事件
 - (void)rightButtonClick {

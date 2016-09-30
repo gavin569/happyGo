@@ -8,6 +8,9 @@
 
 #import "TABaseViewController.h"
 #import "TASelfCenterViewModel.h"
-@interface TAFriendViewController : TABaseViewController
+@interface TAFriendViewController : TABaseViewController<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) TASelfCenterViewModel *viewModel;
+@property (nonatomic, strong) UITableView *firendsListTableView;
+@property (nonatomic, strong) NSMutableArray *sectionArr;
+@property (nonatomic, strong) NSMutableArray *rowArr;
 @end

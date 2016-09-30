@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "WJDatePickerView.h"
 #import "TABasePickerView.h"
+#import "TALineViewModel.h"
 @interface TATravelViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UIScrollView *topScroView;
 @property (nonatomic, strong) UIPageControl *pageControl;
@@ -27,5 +28,6 @@
 @property (nonatomic, strong) UIView *maskView;
 @property (nonatomic, strong) WJDatePickerView *datePickViewA;
 @property (nonatomic, strong) TABasePickerView *pickView;
-
+@property (nonatomic, strong) TALineViewModel *viewModel;
+@property (nonatomic, strong) NSMutableArray *lineIdArr;
 @end

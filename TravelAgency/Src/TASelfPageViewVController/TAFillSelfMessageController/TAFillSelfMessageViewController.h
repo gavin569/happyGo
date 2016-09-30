@@ -9,5 +9,9 @@
 #import "TABaseViewController.h"
 
 @interface TAFillSelfMessageViewController : TABaseViewController
-
+@property (nonatomic, strong) UISegmentedControl*topSegControl;
+@property (nonatomic, strong) UIScrollView *bgScroView;
+@property (nonatomic, strong) UIView *leftView;
+@property (nonatomic, strong) UIView *rightView;
+@property (nonatomic, strong) UIView *bomView;
 @end

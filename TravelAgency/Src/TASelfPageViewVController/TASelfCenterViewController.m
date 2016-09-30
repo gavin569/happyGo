@@ -15,6 +15,7 @@
 #import "TAChangePassWordViewController.h"
 #import "TAMyCarViewController.h"
 #import "TAFillSelfMessageViewController.h"
+#import "TATravelFillSelfMessgeViewController.h"
 @interface TASelfCenterViewController ()
 {
     int _roleId;
@@ -118,7 +119,7 @@
                 {
                     [TAAlertView showAlertWithTitle:@"温馨提示" contentView:nil message:@"是否完善资料" cancelTitle:@"取消" otherTitle:@"确定"  completion:^(BOOL cancelled) {
                         if (!cancelled) {
-                            TAFillSelfMessageViewController * fillSelfMessageController=[[TAFillSelfMessageViewController alloc]init];
+                            TATravelFillSelfMessgeViewController * fillSelfMessageController=[[TATravelFillSelfMessgeViewController alloc]init];
                             [self.navigationController pushViewController:fillSelfMessageController animated:NO];
                         }
                     }];

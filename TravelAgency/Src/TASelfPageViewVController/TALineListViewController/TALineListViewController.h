@@ -7,7 +7,9 @@
 //
 
 #import "TABaseViewController.h"
-
-@interface TALineListViewController : TABaseViewController
-
+#import "TASelfCenterViewModel.h"
+@interface TALineListViewController : TABaseViewController<UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic, strong) UITableView *lineListTableView;
+@property (nonatomic, strong) TASelfCenterViewModel*viewModel;
+@property (nonatomic, strong) NSMutableArray *lineListArr;
 @end

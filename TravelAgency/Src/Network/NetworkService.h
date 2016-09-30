@@ -62,6 +62,42 @@ typedef void(^DictionaryBlock)(NSDictionary *result);
                        userPhone:(NSString*)userPhone
                          success:(DictionaryBlock)success
                          failure:(void (^)())failure;
+//查询一日游路线
++ (void)requestOneDayLinesuccess:(DictionaryBlock)success
+                         failure:(void (^)())failure;
+//查询团队游路线
++ (void)requestAllTeamLinesuccess:(DictionaryBlock)success
+                         failure:(void (^)())failure;
+//请求交单路线信息
++ (void)serachRoutesInJiaoDanWithFixedLine:(int)fixedLine
+                                   success:(DictionaryBlock)success
+                                   failure:(void (^)())failure;
+//交单提交订单
++ (void)submitOrderWithDictionary:(NSDictionary*)dic
+                          success:(DictionaryBlock)success
+                          failure:(void (^)())failure;
 
+
+//添加好友
++ (void)addFriendsWithFriendMessageDictionary:(NSDictionary*)dic
+                                      success:(DictionaryBlock)success
+                                      failure:(void (^)())failure;
+//请求我的账单
++ (void)requestMyBillListWithUserPhone:(NSString*)userPhone
+                               Success:(DictionaryBlock)success
+                          failure:(void (^)())failure;
+//请求旅行社的路线
++ (void)requestTravelLinesListWithUserPhone:(NSString*)userPhone
+                               Success:(DictionaryBlock)success
+                               failure:(void (^)())failure;
+//请求旅行社的订单
++ (void)requestTraveOrdersListWithUserPhone:(NSString*)userPhone
+                                       page:(int)pageNo
+                                orderStatus:(int)orderStatus
+                                    Success:(DictionaryBlock)success
+                                    failure:(void (^)())failure;
+//查询所有景点
++ (void)requestAllSencesSuccess:(DictionaryBlock)success
+                          failure:(void (^)())failure;
 
 @end

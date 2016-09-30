@@ -71,6 +71,7 @@
        NSForegroundColorAttributeName:[UIColor whiteColor]}];
     [self customNavigationBarLeftItemWithTitle:@"西安" action:@selector(leftItemClick)];
     [self customNavigationBarRightItemWithImage:[UIImage imageNamed:@"smallLogin.png"] action:@selector(rightItemClick)];
+    _viewModel=[[TALineViewModel alloc]init];
     [self.view addSubview:self.topScroView];
     [self.view addSubview:self.pageControl];
     [self.view addSubview:self.topView];
@@ -79,6 +80,7 @@
     [self.leftView addSubview:self.leftButton];
     [self.rightView addSubview:self.rightButton];
     [self.view addSubview:self.showTableView];
+    [self requestLine];
 }
 #pragma mark -- UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -273,7 +275,15 @@
         count = -count;
     }
 }
+- (void)requestLine{
+    [_viewModel requestOneDayLineSuccess:^(NSArray *travelArray, NSArray *lineListArray) {
+        [self.lineList addObjectsFromArray:travelArray];
+        [self.lineIdArr addObjectsFromArray:lineListArray];
 
+    } failure:^{
+        
+    }];
+}
 #pragma mark -- GettersAndSetters
 - (UIView*)topScroView{
     if (!_topScroView) {
@@ -407,7 +417,7 @@
 }
 - (NSMutableArray*)lineList {
     if (!_lineList) {
-        _lineList=[[NSMutableArray alloc]initWithObjects:@"金",@"木",@"水",@"火",@"土", nil];
+        _lineList=[[NSMutableArray alloc]init];
     }
     return _lineList;
 }
@@ -416,6 +426,12 @@
         _teamLineList=[[NSMutableArray alloc]init];
     }
     return _teamLineList;
+}
+- (NSMutableArray*)lineIdArr {
+    if (!_lineIdArr) {
+        _lineIdArr=[[NSMutableArray alloc]init];
+    }
+    return _lineIdArr;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
